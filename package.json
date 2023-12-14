@@ -1,0 +1,23 @@
+{
+  "name": "theres-never-time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdwillemse/theres-never-time.git"
+  },
+  "author": "JD Willemse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdwillemse/theres-never-time/issues"
+  },
+  "homepage": "https://github.com/jdwillemse/theres-never-time#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

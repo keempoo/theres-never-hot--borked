@@ -5,6 +5,7 @@
   "main": "index.mjs",
   "scripts": {
     "start": "node index.mjs",
+    "dev": "nodemon index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/jdwillemse/theres-never-time#readme",
   "dependencies": {
     "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }

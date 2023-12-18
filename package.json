@@ -1,27 +1,57 @@
 {
-  "name": "theres-never-time",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.mjs",
-  "scripts": {
-    "start": "node index.mjs",
-    "dev": "nodemon index.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "html5-boilerplate",
+  "version": "9.0.0",
+  "homepage": "https://html5boilerplate.com/",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdwillemse/theres-never-time.git"
+    "url": "https://github.com/h5bp/html5-boilerplate.git"
   },
-  "author": "JD Willemse",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jdwillemse/theres-never-time/issues"
+  "scripts": {
+    "backend": "node backend/index.mjs",
+    "dev-backend": "nodemon backend/index.mjs",
+    "build": "gulp build",
+    "prettier": "prettier --write ./**/*.{js,json,md,mjs,yml}",
+    "test": "gulp archive && mocha --reporter spec --timeout 5000"
   },
-  "homepage": "https://github.com/jdwillemse/theres-never-time#readme",
   "dependencies": {
     "colors": "^1.4.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
-  }
+    "archiver": "^6.0.1",
+    "del": "^7.1.0",
+    "eslint": "^8.55.0",
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-mocha": "^10.2.0",
+    "glob": "^10.3.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-header": "^2.0.9",
+    "gulp-rename": "^2.0.0",
+    "main.css": "3.0.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.2",
+    "prettier": "3.1.0",
+    "strip-json-comments": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "h5bp-configs": {
+    "directories": {
+      "archive": "archive",
+      "dist": "dist",
+      "src": "src",
+      "test": "test"
+    }
+  },
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE.txt",
+    "package.json",
+    "dist/",
+    "README.md"
+  ]
 }

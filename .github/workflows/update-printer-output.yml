@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Node setup
         uses: actions/setup-node@v4
       - name: Install dependencies
@@ -25,7 +27,7 @@ jobs:
           git config user.name "${{ github.actor }}"
           git add .
           git commit -m "Update facts.json"
-          git push origin HEAD:main
+          git push
 
       - name: Clone gist repo
         run: |

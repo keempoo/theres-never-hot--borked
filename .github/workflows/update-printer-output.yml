@@ -19,6 +19,14 @@ jobs:
         run: npm install
       - name: Create output file
         run: npm run backend
+      - name: Commit and push changes to facts file
+        run: |
+          git config user.email "robot@github.com"
+          git config user.name "${{ github.actor }}"
+          git add .
+          git commit -m "Update facts.json"
+          git push origin HEAD:main
+
       - name: Clone gist repo
         run: |
           git config --global url.https://github.com/.insteadOf git://github.com/

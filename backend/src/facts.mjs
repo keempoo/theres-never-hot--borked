@@ -2,7 +2,7 @@ import fs from 'fs';
 // import 'dotenv/config';
 // import { exec } from 'child_process';
 
-const FACTS_FILE = 'facts.json';
+const FACTS_FILE = './facts.json';
 
 // function getSubredditLatest(subreddit) {
 //   const command = `curl -H "Accept: application/json" https://www.reddit.com/r/${subreddit}/new.json?limit=3  -o output-twochromosomes.json`;
@@ -29,6 +29,6 @@ export function getFunFact() {
   const facts = JSON.parse(fs.readFileSync(FACTS_FILE, 'utf8'));
   const funFact = facts.splice(0, 1)[0];
   facts.push(funFact);
-  fs.writeFileSync(FACTS_FILE, JSON.stringify(facts), 'utf8');
+  fs.writeFileSync(FACTS_FILE, JSON.stringify(facts, null, 2), 'utf8');
   return funFact;
 }

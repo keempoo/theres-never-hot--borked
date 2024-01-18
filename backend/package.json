@@ -5,7 +5,7 @@
   "main": "index.mjs",
   "scripts": {
     "start": "node index.mjs",
-    "dev": "nodemon index.mjs",
+    "dev": "nodemon  --ignore './*.json' index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

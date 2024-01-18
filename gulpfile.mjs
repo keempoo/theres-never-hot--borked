@@ -73,10 +73,6 @@ gulp.task('copy:index.html', () => {
   return gulp.src(`${dirs.src}/index.html`).pipe(gulp.dest(dirs.dist));
 });
 
-gulp.task('copy:license', () =>
-  gulp.src('LICENSE.txt').pipe(gulp.dest(dirs.dist)),
-);
-
 gulp.task('copy:style', () => {
   const banner = `/*! HTML5 Boilerplate v${pkg.version} | ${pkg.license} License | ${pkg.homepage} */\n\n`;
 
@@ -126,10 +122,7 @@ gulp.task('lint:js', () =>
 // ---------------------------------------------------------------------
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
-gulp.task(
-  'copy',
-  gulp.series('copy:index.html', 'copy:license', 'copy:style', 'copy:misc'),
-);
+gulp.task('copy', gulp.series('copy:index.html', 'copy:style', 'copy:misc'));
 
 gulp.task('build', gulp.series(gulp.parallel('clean', 'lint:js'), 'copy'));
 

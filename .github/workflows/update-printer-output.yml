@@ -25,7 +25,7 @@ jobs:
         run: |
           git config user.email "robot@github.com"
           git config user.name "${{ github.actor }}"
-          git add .
+          git add 'facts.json'
           git commit -m "Update facts.json"
           git push
 

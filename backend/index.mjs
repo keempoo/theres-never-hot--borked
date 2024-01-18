@@ -1,5 +1,5 @@
 import fs from 'fs';
-import 'dotenv/config';
+// import 'dotenv/config';
 
 import { getFunFact } from './src/facts.mjs';
 

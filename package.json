@@ -9,7 +9,7 @@
   },
   "scripts": {
     "backend": "node backend/index.mjs",
-    "dev-backend": "nodemon backend/index.mjs",
+    "dev-backend": "nodemon --ignore 'backend/*.json' backend/index.mjs",
     "start": "nodemon --watch src --exec npm run build",
     "build": "gulp build",
     "prettier": "prettier --write ./**/*.{js,json,md,mjs,yml}",

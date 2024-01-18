@@ -1,8 +1,13 @@
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 // import 'dotenv/config';
 // import { exec } from 'child_process';
 
-const FACTS_FILE = './facts.json';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const FACTS_FILE = path.join(__dirname, '..', 'facts.json');
 
 // function getSubredditLatest(subreddit) {
 //   const command = `curl -H "Accept: application/json" https://www.reddit.com/r/${subreddit}/new.json?limit=3  -o output-twochromosomes.json`;

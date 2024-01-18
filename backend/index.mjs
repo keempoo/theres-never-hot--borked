@@ -1,7 +1,7 @@
 import fs from 'fs';
 // import 'dotenv/config';
 
-import { getFunFact } from './facts.mjs';
+import { getFunFact } from './src/facts.mjs';
 
 const OUTPUT_FILE = 'print-data.txt';
 const ms = 60 * 60 * 1000; // milliseconds in an hour

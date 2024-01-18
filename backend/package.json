@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/jdwillemse/theres-never-time#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"

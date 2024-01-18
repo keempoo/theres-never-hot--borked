@@ -2,7 +2,7 @@ import fs from 'fs';
 // import 'dotenv/config';
 // import { exec } from 'child_process';
 
-const FACTS_FILE = 'facts.json';
+const FACTS_FILE = './facts.json';
 
 // function getSubredditLatest(subreddit) {
 //   const command = `curl -H "Accept: application/json" https://www.reddit.com/r/${subreddit}/new.json?limit=3  -o output-twochromosomes.json`;

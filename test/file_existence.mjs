@@ -38,7 +38,6 @@ const expectedFilesInDistDir = [
   'js/app.js',
   'js/vendor/',
   'js/vendor/.gitkeep',
-  'LICENSE.txt',
   'robots.txt',
   'site.webmanifest',
 ];

@@ -7,27 +7,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const FACTS_FILE = path.join(__dirname, '..', 'facts.json');
-
-// function getSubredditLatest(subreddit) {
-//   const command = `curl -H "Accept: application/json" https://www.reddit.com/r/${subreddit}/new.json?limit=3  -o output-twochromosomes.json`;
-
-//   exec(command, function (error, stdout, stderr) {
-//     console.log('stdout: ' + stdout);
-//     console.log('stderr: ' + stderr);
-
-//     const facts = JSON.parse(
-//       fs.readFileSync('output-twochromosomes.json', 'utf8'),
-//     );
-//     console.log('----------------');
-//     // console.log(facts.data.children);
-//     console.log('----------------');
-
-//     if (error !== null) {
-//       console.log('exec error: ' + error);
-//     }
-//   });
-// }
+const FACTS_FILE = path.join(__dirname, 'facts.json');
 
 // read facts from file, take fist one out, put it at the end, and save the all back to the file
 export function getFunFact() {

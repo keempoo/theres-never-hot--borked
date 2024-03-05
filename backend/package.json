@@ -5,7 +5,7 @@
   "main": "index.mjs",
   "scripts": {
     "start": "node index.mjs",
-    "dev": "nodemon --ignore './*.json' index.mjs",
+    "dev": "nodemon index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +18,17 @@
     "url": "https://github.com/jdwillemse/theres-never-time/issues"
   },
   "homepage": "https://github.com/jdwillemse/theres-never-time#readme",
+  "nodemonConfig": {
+    "ignore": [
+      "./**/*.json",
+      "./**/*.text"
+    ]
+  },
   "dependencies": {
     "colors": "^1.4.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "javascript-time-ago": "^2.5.9",
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"

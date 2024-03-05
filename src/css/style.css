@@ -1,0 +1,296 @@
+:root {
+  --second: 1s;
+  --minute: calc(var(--second) * 60);
+  --hour: calc(var(--minute) * 60);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@font-face {
+  font-family: 'webfont';
+  src:
+    url('../font/webfont.woff2') format('woff2'),
+    url('../font/webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'webfont';
+  background: #c8c8b0;
+  /* background: #f00; */
+}
+
+.wrapper {
+  /* box-shadow: inset 0 0 0 1px #0f0; */
+  position: absolute;
+  width: auto;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1 / 1;
+}
+
+.background-wrapper {
+  position: absolute;
+  top: -12.5%;
+  left: 15.5%;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient {
+  position: absolute;
+  width: 170%;
+  top: 0;
+  left: 0;
+  transform: translate(-22%, -24%);
+  aspect-ratio: 1 / 1.315;
+  background: radial-gradient(#eae6d5 45%, #c8c8b0 60%);
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+}
+
+.clock {
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  text-transform: uppercase;
+}
+
+.clock::after {
+  /* background: pink; */
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2%;
+  height: 2%;
+  z-index: 10;
+}
+
+.minute-container,
+.hour-container,
+.second-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.minute-container {
+  z-index: 1;
+}
+
+.hour-container {
+  animation: rotate 43200s infinite linear;
+  animation-delay: calc(var(--time) * -1s);
+}
+
+.minute-container {
+  animation: rotate 3600s infinite steps(60);
+  animation-delay: calc(var(--time) * -1s);
+}
+
+.second-container {
+  animation: rotate 60s infinite steps(60);
+  animation-delay: calc(var(--time) * -1s);
+}
+
+.hour,
+.minute,
+.second {
+  width: 1.5%;
+  height: 45%;
+  position: absolute;
+  left: 49.25%;
+  top: 5%;
+  transform-origin: 50% 71%;
+}
+
+.copy {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  white-space: nowrap;
+  transform: rotateZ(-90deg) translateY(-25%);
+  transform-origin: 0% 32%;
+  color: #fff;
+  text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.8);
+  cursor: default;
+  font-size: clamp(1rem, 3.8vh, 2rem);
+}
+
+.minute-arm {
+  position: absolute;
+  height: 100%;
+  left: -100%;
+}
+
+@media (orientation: portrait) {
+  .wrapper {
+    height: auto;
+    width: 90%;
+  }
+
+  .copy {
+    font-size: clamp(1rem, 3.8vw, 2rem);
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+.art-piece,
+.art-piece > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.art-piece {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(
+    50% 50%,
+    circle closest-side,
+    rgb(234, 230, 213) 61%,
+    rgb(217, 215, 195) 86%,
+    rgb(200, 200, 176) 100%
+  );
+  overflow: hidden;
+}
+
+.art-piece__clock {
+  position: absolute;
+  top: 50vh;
+  left: 44.4vw;
+  transform: translate(-50%, -50%);
+  width: 19vw;
+  height: 19vw;
+  border-radius: 50%;
+}
+.art-piece__clock-face {
+  border-radius: 100px;
+  position: absolute;
+  top: 50vh;
+  left: 44.4vw;
+  transform: translate(-50%, -50%);
+  width: 19vw;
+  height: 19vw;
+  border-radius: 50%;
+}
+.art-piece__clock {
+  position: absolute;
+  top: 50vh;
+  left: 44.4vw;
+  transform: translate(-50%, -50%);
+  width: 19vw;
+  height: 19vw;
+  border-radius: 50%;
+}
+
+.center {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.art-piece__woman {
+  position: fixed;
+  top: 100%;
+  left: 11.5vh;
+  margin-right: 10px;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/woman.webp');
+  background-position: center center;
+  background-origin: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.clock__hand {
+  z-index: 100;
+  background-position: bottom;
+  background-origin: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform-origin: bottom;
+}
+
+.clock__hands {
+  position: absolute;
+  top: 50%;
+  left: 36.9%;
+  z-index: 200;
+  transform: translate(-50%, -50%);
+  outline: 3px solid pink;
+}
+
+/* My turn*/
+.clock__hours-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 5vw;
+  height: 40vh;
+  background-image: url('../img/my-turn.webp');
+  animation: rotate 43200s infinite linear;
+  animation-delay: calc(var(--time) * -1s);
+}
+
+.clock__minutes-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 5vw;
+  height: 40vh;
+  background-image: url('../img/minute-hand.webp');
+  animation: rotate 3600s infinite linear;
+  animation-delay: calc(var(--time) * -1s);
+}
+
+/* It's never */
+.clock__seconds-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 6vw;
+  height: 41vh;
+  background-image: url('../img/its-never.webp');
+  animation: rotate steps(60) var(--minute) infinite;
+  animation-delay: calc(var(--time) * -1s);
+}

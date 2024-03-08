@@ -30,15 +30,15 @@ async function createFile() {
     hour: '2-digit',
     minute: '2-digit',
   });
-  const funFact = getFunFact();
+  // take the index of the next fact to be printed from the command line arguments
+  const nextFactIndex = process.argv.slice(2) ?? 0;
+  const funFact = getFunFact(nextFactIndex);
   const data = await renderOutput(currentTime, funFact);
 
   fs.writeFileSync(OUTPUT_FILE, data);
 
-  console.log('File written successfully');
-  console.log('------------------------');
-
-  console.log(fs.readFileSync(OUTPUT_FILE, 'utf8'));
+  // pass the index of the next fact to be printed to the stdout (must be string)
+  process.stdout.write(`${Number(nextFactIndex) + 1}`);
 }
 
 // init

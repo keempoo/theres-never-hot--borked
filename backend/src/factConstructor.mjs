@@ -3,7 +3,7 @@ import { fetchRedditRSS } from './fetchRedditRSS.mjs';
 export async function factConstructor(fact) {
   switch (fact.id) {
     case 'twoxchromosomes': {
-      const url = 'https://www.reddit.com/r/TwoXChromosomes/.rss';
+      const url = 'https://www.reddit.com/r/TwoXChromosomes/top/.rss?t=day';
       const reponse = await fetchRedditRSS(url);
       return fact.copy.split('{{data}}').join(reponse);
     }

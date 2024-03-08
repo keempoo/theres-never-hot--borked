@@ -10,17 +10,41 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DOC_ROOT: ${{ github.workspace }}/GIST
+      FACT_INDEX_GIST_ID: d401c5675c76d26e60dfb4ea0b985137
+      FACT_INDEX_GIST_NAME: theres-never-time-fact-printout-state.txt
+      PRINT_DATA_GIST_ID: 770f8f7ec5eeaee50f0e288e47d4e8fb
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Node setup
         uses: actions/setup-node@v4
+
+      - uses: sergeysova/gist-read-action@v1
+        id: next-fact-index
+        with:
+          gist_id: ${{ env.FACT_INDEX_GIST_ID }}
+          file_name: ${{ env.FACT_INDEX_GIST_NAME }}
+
+      - name: show content
+        run: echo "Hello ${{ steps.next-fact-index.outputs.content }}"
+
       - name: Install dependencies
         run: npm install
+
       - name: Create output file
-        run: npm run backend
+        id: updated-fact-index
+        # pass the index of the next fact to print to the script
+        run: npm run backend -- ${{ steps.next-fact-index.outputs.content }}
+
+      - uses: sergeysova/gist-write-action@v1
+        with:
+          gist_id: ${{ env.FACT_INDEX_GIST_ID }}
+          file_name: ${{ env.FACT_INDEX_GIST_NAME }}
+          content: ${{ steps.updated-fact-index.outputs.content }}
+
       - name: Commit and push changes to facts file
         run: |
           git config user.email "robot@github.com"
@@ -33,8 +57,10 @@ jobs:
         run: |
           git config --global url.https://github.com/.insteadOf git://github.com/
           git clone https://gist.github.com/770f8f7ec5eeaee50f0e288e47d4e8fb.git ${{ env.DOC_ROOT }}
+
       - name: Override gist file
         run: cp -f print-data.txt ${{ env.DOC_ROOT }}/print-data.txt
+
       - name: Commit and push changes to gist
         run: |
           cd ${{ env.DOC_ROOT }}
@@ -42,4 +68,4 @@ jobs:
           git config user.name "${{ github.actor }}"
           git add .
           git commit -m "Update print-data.txt"
-          git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/770f8f7ec5eeaee50f0e288e47d4e8fb.git
+          git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ env.PRINT_DATA_GIST_ID }}.git

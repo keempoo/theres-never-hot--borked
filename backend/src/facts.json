@@ -1,8 +1,5 @@
 [
   {
-    "copy": "THE CURRENT GENERIC PRICE FOR VIAGRA IS $2.00 PER DOSE"
-  },
-  {
     "copy": "THE CURRENT GENERIC PRICE FOR A THE POSTPARTUM DEPRESSION MEDICINE ZURZUVAE $15,900.00 PER 14-DAY COURSE"
   },
   {
@@ -15,5 +12,11 @@
   {
     "copy": "THE TOP 3 POSTS ON R/TWOXCHROMOSOMES ARE\n\n{{data}}",
     "id": "twoxchromosomes"
+  },
+  {
+    "copy": "Women householder 15,618 vs Male 7,128\nSingle mothers/caretakers vs Single fathers/caretakers \n\nGap steadily widened by 35%\n\nhttps://fred.stlouisfed.org/graph/fredgraph.png?g=1ebuZ"
+  },
+  {
+    "copy": "THE CURRENT GENERIC PRICE FOR VIAGRA IS $2.00 PER DOSE"
   }
 ]

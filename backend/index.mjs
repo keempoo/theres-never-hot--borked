@@ -36,6 +36,11 @@ async function createFile() {
   const data = await renderOutput(currentTime, funFact);
 
   fs.writeFileSync(OUTPUT_FILE, data);
+
+  console.log('File written successfully');
+  console.log('------------------------');
+
+  console.log(fs.readFileSync(OUTPUT_FILE, 'utf8'));
 }
 
 // init

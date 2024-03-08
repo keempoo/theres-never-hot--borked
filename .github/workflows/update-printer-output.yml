@@ -60,14 +60,6 @@ jobs:
         # pass the index of the next fact to print to the script
         run: npm run backend -- ${{ steps.fact-index.outputs.INDEX }}
 
-      - name: Commit and push changes to facts file
-        run: |
-          git config user.email "robot@github.com"
-          git config user.name "${{ github.actor }}"
-          git add 'backend/facts.json'
-          git commit -m "Update facts.json"
-          git push
-
       - name: Clone print gist repo
         run: |
           git config --global url.https://github.com/.insteadOf git://github.com/

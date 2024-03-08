@@ -13,6 +13,7 @@ jobs:
       FACT_INDEX_GIST_ID: d401c5675c76d26e60dfb4ea0b985137
       FACT_INDEX_GIST_NAME: theres-never-time-fact-printout-state.txt
       PRINT_DATA_GIST_ID: 770f8f7ec5eeaee50f0e288e47d4e8fb
+      PRINT_DATA_GIST_NAME: print-data.txt
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
@@ -24,28 +25,38 @@ jobs:
       - name: Node setup
         uses: actions/setup-node@v4
 
-      - uses: sergeysova/gist-read-action@v1
-        id: next-fact-index
-        with:
-          gist_id: ${{ env.FACT_INDEX_GIST_ID }}
-          file_name: ${{ env.FACT_INDEX_GIST_NAME }}
+      - name: Clone fact-index gist repo
+        run: |
+          git config --global url.https://github.com/.insteadOf git://github.com/
+          git clone https://gist.github.com/${{ env.FACT_INDEX_GIST_ID }}.git ${{ env.DOC_ROOT }}
+
+      - name: Update fact-index gist file
+        id: fact-index
+        run: |
+          cd ${{ env.DOC_ROOT }}
+          OLD_NUM=$(cut -d ',' -f2 ${{ env.FACT_INDEX_GIST_NAME }})
+          NEW_NUM=$(expr $OLD_NUM + 1)
+          echo "INDEX=$OLD_NUM" >> $GITHUB_OUTPUT
+          echo $NEW_NUM > ${{ env.FACT_INDEX_GIST_NAME }}
+
+      - name: Commit and push changes to fact-index gist
+        run: |
+          git config user.email "robot@github.com"
+          git config user.name "${{ github.actor }}"
+          git add .
+          git commit -m "Update ${{ env.FACT_INDEX_GIST_NAME }}"
+          git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ env.FACT_INDEX_GIST_ID }}.git
+          rm ${{ env.FACT_INDEX_GIST_NAME }}
 
       - name: show content
-        run: echo "Hello ${{ steps.next-fact-index.outputs.content }}"
+        run: echo "Hello ${{ steps.fact-index.outputs.INDEX }}"
 
       - name: Install dependencies
         run: npm install
 
       - name: Create output file
-        id: updated-fact-index
         # pass the index of the next fact to print to the script
-        run: npm run backend -- ${{ steps.next-fact-index.outputs.content }}
-
-      - uses: sergeysova/gist-write-action@v1
-        with:
-          gist_id: ${{ env.FACT_INDEX_GIST_ID }}
-          file_name: ${{ env.FACT_INDEX_GIST_NAME }}
-          content: ${{ steps.updated-fact-index.outputs.content }}
+        run: npm run backend -- ${{ steps.fact-index.outputs.INDEX }}
 
       - name: Commit and push changes to facts file
         run: |
@@ -55,19 +66,19 @@ jobs:
           git commit -m "Update facts.json"
           git push
 
-      - name: Clone gist repo
+      - name: Clone print gist repo
         run: |
           git config --global url.https://github.com/.insteadOf git://github.com/
-          git clone https://gist.github.com/770f8f7ec5eeaee50f0e288e47d4e8fb.git ${{ env.DOC_ROOT }}
+          git clone https://gist.github.com/${{ env.PRINT_DATA_GIST_ID }}.git ${{ env.DOC_ROOT }}
 
-      - name: Override gist file
-        run: cp -f print-data.txt ${{ env.DOC_ROOT }}/print-data.txt
+      - name: Override print gist file
+        run: cp -f ${{ env.PRINT_DATA_GIST_NAME }} ${{ env.DOC_ROOT }}/${{ env.PRINT_DATA_GIST_NAME }}
 
-      - name: Commit and push changes to gist
+      - name: Commit and push changes to print gist
         run: |
           cd ${{ env.DOC_ROOT }}
           git config user.email "robot@github.com"
           git config user.name "${{ github.actor }}"
           git add .
-          git commit -m "Update print-data.txt"
+          git commit -m "Update ${{ env.PRINT_DATA_GIST_NAME }}"
           git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ env.PRINT_DATA_GIST_ID }}.git

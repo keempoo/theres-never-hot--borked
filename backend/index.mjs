@@ -36,9 +36,6 @@ async function createFile() {
   const data = await renderOutput(currentTime, funFact);
 
   fs.writeFileSync(OUTPUT_FILE, data);
-
-  // pass the index of the next fact to be printed to the stdout (must be string)
-  process.stdout.write(`${Number(nextFactIndex) + 1}`);
 }
 
 // init

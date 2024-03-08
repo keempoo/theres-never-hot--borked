@@ -14,7 +14,6 @@ jobs:
       FACT_INDEX_GIST_NAME: theres-never-time-fact-printout-state.txt
       PRINT_DATA_GIST_ID: 770f8f7ec5eeaee50f0e288e47d4e8fb
       PRINT_DATA_GIST_NAME: print-data.txt
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout
@@ -41,10 +40,11 @@ jobs:
 
       - name: Commit and push changes to fact-index gist
         run: |
+          cd ${{ env.DOC_ROOT }}
           git config user.email "robot@github.com"
           git config user.name "${{ github.actor }}"
           git add .
-          git commit -m "Update ${{ env.FACT_INDEX_GIST_NAME }}"
+          git commit -m "Increment index"
           git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ env.FACT_INDEX_GIST_ID }}.git
           rm ${{ env.FACT_INDEX_GIST_NAME }}
 

@@ -13,6 +13,8 @@ jobs:
       FACT_INDEX_GIST_ID: d401c5675c76d26e60dfb4ea0b985137
       FACT_INDEX_GIST_NAME: theres-never-time-fact-printout-state.txt
       PRINT_DATA_GIST_ID: 770f8f7ec5eeaee50f0e288e47d4e8fb
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4

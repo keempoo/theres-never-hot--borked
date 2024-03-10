@@ -31,28 +31,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "21"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
         run: npm install -w @theres-never-time/website
 
-      - name: Build website
-        run: npm run website:build
+      - name: Build and export website
+        run: npm run website:build && npm run website:export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './dist'
-      
+          path: "./dist"
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

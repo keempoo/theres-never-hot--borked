@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>There’s Never Time</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        display: block;
+        margin: 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      BING BONG!<br /><br />
+
+      THE TIME IS NOW {{currentTime}} <br /><br />
+
+      {{{completedFact}}}
+    </p>
+    {{#image}}
+    <img src="{{{image}}}" alt="" />
+    {{/image}}
+  </body>
+</html>

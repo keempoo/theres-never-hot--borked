@@ -1,11 +1,12 @@
 import fs from 'fs';
+import Mustache from 'mustache';
 
 // import 'dotenv/config';
 
 import { getFunFact } from './src/facts.mjs';
 import { factConstructor } from './src/factConstructor.mjs';
 
-const OUTPUT_FILE = 'print-data.txt';
+const OUTPUT_FILE = 'printer-output.html';
 const ms = 60 * 60 * 1000; // milliseconds in an hour
 
 function roundToHour(date) {
@@ -13,14 +14,14 @@ function roundToHour(date) {
 }
 
 async function renderOutput(currentTime, funFact) {
+  const template = fs.readFileSync('./src/template.html', 'utf8');
   const completedFact = await factConstructor(funFact);
-
-  return `BING BONG!
-
-THE TIME IS NOW ${currentTime}
-
-${completedFact}
-`;
+  const output = Mustache.render(template, {
+    ...funFact,
+    completedFact,
+    currentTime,
+  });
+  return output;
 }
 
 async function createFile() {

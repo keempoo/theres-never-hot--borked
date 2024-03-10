@@ -1,5 +1,5 @@
 {
-  "name": "theres-never-time",
+  "name": "@theres-never-time/output",
   "version": "1.0.0",
   "description": "",
   "main": "index.mjs",
@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
-    "dotenv": "^16.3.1",
     "javascript-time-ago": "^2.5.9",
     "mustache": "^4.2.0",
     "rss-parser": "^3.13.0",

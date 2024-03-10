@@ -3,7 +3,5 @@ archive
 node_modules
 packages
 .env
-dist/package-lock.json
-src/package-lock.json
-backend/output-*.json
 printer-output.html
+apps/print-script/output/*

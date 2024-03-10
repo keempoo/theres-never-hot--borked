@@ -1,12 +1,21 @@
 import fs from 'fs';
 import Mustache from 'mustache';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 // import 'dotenv/config';
 
 import { getFunFact } from './src/facts.mjs';
 import { factConstructor } from './src/factConstructor.mjs';
 
-const OUTPUT_FILE = 'printer-output.html';
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
+
+const OUTPUT_FILE = path.join(__dirname, '..', 'printer-output.html');
+
+const TEMPLATE_FILE = path.join(__dirname, 'src', 'template.html');
+
 const ms = 60 * 60 * 1000; // milliseconds in an hour
 
 function roundToHour(date) {
@@ -14,7 +23,7 @@ function roundToHour(date) {
 }
 
 async function renderOutput(currentTime, funFact) {
-  const template = fs.readFileSync('./src/template.html', 'utf8');
+  const template = fs.readFileSync(TEMPLATE_FILE, 'utf8');
   const completedFact = await factConstructor(funFact);
   const output = Mustache.render(template, {
     ...funFact,

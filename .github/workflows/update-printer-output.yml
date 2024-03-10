@@ -15,7 +15,6 @@ jobs:
       FACT_INDEX_GIST_NAME: theres-never-time-fact-printout-state.txt
       PRINT_DATA_GIST_ID: 8d3e2bbe443b3312e257d8a856caa29d
       PRINT_DATA_GIST_NAME: theres-never-time-printer-output.html
-      GENERATED_HTML: printer-output.html
 
     steps:
       - name: Checkout
@@ -65,7 +64,7 @@ jobs:
           git clone https://gist.github.com/${{ env.PRINT_DATA_GIST_ID }}.git ${{ env.FACT_DOC_ROOT }}
 
       - name: Override print gist file
-        run: cp -f ${{ env.GENERATED_HTML }} ${{ env.FACT_DOC_ROOT }}/${{ env.PRINT_DATA_GIST_NAME }}
+        run: cp -f ${{ env.PRINT_DATA_GIST_NAME }} ${{ env.FACT_DOC_ROOT }}/${{ env.PRINT_DATA_GIST_NAME }}
 
       - name: Commit and push changes to print gist
         run: |

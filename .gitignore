@@ -4,5 +4,5 @@ node_modules
 packages
 .env
 dist
-printer-output.html
+*printer-output.html
 apps/print-script/output/*

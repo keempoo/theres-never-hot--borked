@@ -10,7 +10,11 @@ const __filename = fileURLToPath(import.meta.url);
 
 const __dirname = path.dirname(__filename);
 
-const OUTPUT_FILE = path.join(__dirname, '..', 'printer-output.html');
+const OUTPUT_FILE = path.join(
+  __dirname,
+  '..',
+  'theres-never-time-printer-output.html'
+);
 
 const TEMPLATE_FILE = path.join(__dirname, 'src', 'template.html');
 

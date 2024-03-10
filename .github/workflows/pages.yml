@@ -45,7 +45,9 @@ jobs:
         run: npm install -w @theres-never-time/website
 
       - name: Build and export website
-        run: npm run website:build && npm run website:export
+        run: |
+          npm run website:build 
+          npm run website:export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

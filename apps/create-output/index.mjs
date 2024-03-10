@@ -10,9 +10,10 @@ const __filename = fileURLToPath(import.meta.url);
 
 const __dirname = path.dirname(__filename);
 
+const OUTPUT_FOLDER = 'dist';
+
 const OUTPUT_FILE = path.join(
-  __dirname,
-  '..',
+  OUTPUT_FOLDER,
   'theres-never-time-printer-output.html'
 );
 
@@ -47,6 +48,7 @@ async function createFile() {
   const funFact = getFunFact(nextFactIndex);
   const data = await renderOutput(currentTime, funFact);
 
+  fs.mkdirSync(OUTPUT_FOLDER, { recursive: true });
   fs.writeFileSync(OUTPUT_FILE, data);
 
   console.log('File written successfully');

@@ -56,7 +56,9 @@ jobs:
 
       - name: Create output file
         # pass the index of the next fact to print to the script
-        run: npm run create-output:build -- ${{ steps.fact-index.outputs.INDEX }}
+        run: |
+          npm run create-output:build -- ${{ steps.fact-index.outputs.INDEX }} 
+          npm run create-output:export
 
       - name: Clone print gist repo
         run: |

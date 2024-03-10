@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "create-output:build": "npm run -w @theres-never-time/output start",
+    "create-output:dev": "npm run -w @theres-never-time/output dev",
+    "website:build": "npm run -w @theres-never-time/website build",
+    "website:dev": "npm run -w @theres-never-time/website start",
+    "print": "./apps/print-script/theres-never-time-print.sh"
   },
   "workspaces": [
     "./apps/*"

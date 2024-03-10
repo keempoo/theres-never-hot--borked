@@ -53,13 +53,11 @@ jobs:
         run: echo "Hello ${{ steps.fact-index.outputs.INDEX }}"
 
       - name: Install dependencies
-        run: |
-          cd backend
-          npm install
+        run: npm install -w @theres-never-time/output
 
       - name: Create output file
         # pass the index of the next fact to print to the script
-        run: npm run backend -- ${{ steps.fact-index.outputs.INDEX }}
+        run: npm run create-output:build -- ${{ steps.fact-index.outputs.INDEX }}
 
       - name: Clone print gist repo
         run: |

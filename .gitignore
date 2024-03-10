@@ -3,5 +3,6 @@ archive
 node_modules
 packages
 .env
+dist
 printer-output.html
 apps/print-script/output/*

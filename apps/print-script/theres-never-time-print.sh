@@ -30,7 +30,7 @@ if [ ! -z "$1" ] && [ -f $1 ]
 fi
 
 echo "converting ${PRINT_FILE} to $PRINTER_OUTPUT_FILE"
-wkhtmltopdf --page-width 152 --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 --print-media-type $PRINT_FILE $PRINTER_OUTPUT_FILE
+wkhtmltopdf --page-width 152 --page-height 100 --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 --print-media-type $PRINT_FILE $PRINTER_OUTPUT_FILE
 
 lp $PRINTER_OUTPUT_FILE
 

@@ -66,7 +66,7 @@ jobs:
           git clone https://gist.github.com/${{ env.PRINT_DATA_GIST_ID }}.git ${{ env.FACT_DOC_ROOT }}
 
       - name: Override print gist file
-        run: cp -f ${{ env.PRINT_DATA_GIST_NAME }} ${{ env.FACT_DOC_ROOT }}/${{ env.PRINT_DATA_GIST_NAME }}
+        run: find ./ -name '${{ env.PRINT_DATA_GIST_NAME }}' -exec cp "{}" ${{ env.FACT_DOC_ROOT }}/ \;
 
       - name: Commit and push changes to print gist
         run: |

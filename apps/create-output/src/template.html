@@ -11,7 +11,10 @@
       html,
       body {
         display: block;
-        margin: 0;
+        /* add an inch margin to avoid printer cut-off */
+      }
+      body {
+        margin: 0 25mm;
       }
       img {
         max-width: 100%;
@@ -30,7 +33,8 @@
         display: block;
         margin: 0 auto;
         font-family: inherit;
-        padding: 20px;
+        padding: 20px 0;
+        line-height: 1.5;
       }
     </style>
   </head>
@@ -50,7 +54,7 @@
       <strong>THE TIME IS NOW {{currentTime}}</strong>
       <p>= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =</p>
     </header>
-    <pre class="fun-fact">{{{completedFact}}}</pre>
+    <div class="fun-fact">{{{completedFact}}}</div>
     {{#image}}
     <img src="{{{image}}}" alt="" />
     {{/image}}

@@ -6,6 +6,7 @@
     "create-output:build": "npm run -w @theres-never-time/output start",
     "create-output:export": "mv ./apps/create-output/dist ./",
     "create-output:dev": "npm run -w @theres-never-time/output dev",
+    "create-output:serve": "npm run -w @theres-never-time/output serve",
     "website:build": "npm run -w @theres-never-time/website build",
     "website:export": "mv ./apps/website/dist ./dist",
     "website:dev": "npm run -w @theres-never-time/website start",

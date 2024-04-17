@@ -18,9 +18,16 @@ rm -rf $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR
 
 
-echo "Download print data (https://gist.github.com/${REPO}/${PRINT_FILE_GIST_ID}/raw/)"
-
-curl --location --output $PRINT_FILE "https://gist.github.com/${REPO}/${PRINT_FILE_GIST_ID}/raw/?$(date +%s)";
+# override input file if one is passed as argument
+if [ ! -z "$1" ] && [ -f $1 ]
+  then
+  echo "using file $1"
+    PRINT_FILE=$1
+  else
+    echo "the file you passed does not exist"
+    echo "Download print data (https://gist.github.com/${REPO}/${PRINT_FILE_GIST_ID}/raw/)"
+    curl --location --output $PRINT_FILE "https://gist.github.com/${REPO}/${PRINT_FILE_GIST_ID}/raw/?$(date +%s)";
+fi
 
 echo "converting ${PRINT_FILE} to $PRINTER_OUTPUT_FILE"
 wkhtmltopdf --page-width 152 --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 --print-media-type $PRINT_FILE $PRINTER_OUTPUT_FILE

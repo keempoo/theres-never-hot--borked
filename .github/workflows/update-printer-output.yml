@@ -1,7 +1,9 @@
-name: update-printer-output
-run-name: Update printer output gist
+name: Update printer output
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "apps/create-output/**"
   schedule:
     # At minute 50 past every hour.
     - cron: "50 */1 * * *"

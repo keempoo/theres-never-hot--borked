@@ -20,10 +20,15 @@
   },
   "homepage": "https://github.com/jdwillemse/theres-never-time#readme",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
     "colors": "^1.4.0",
+    "dotenv": "^16.4.5",
     "javascript-time-ago": "^2.5.9",
+    "lodash": "^4.17.21",
     "mustache": "^4.2.0",
+    "node-fetch": "^3.3.2",
     "rss-parser": "^3.13.0",
+    "serpapi": "^2.1.0",
     "yaml": "^2.4.1"
   },
   "devDependencies": {

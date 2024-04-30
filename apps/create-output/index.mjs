@@ -2,6 +2,7 @@ import fs from 'fs';
 import Mustache from 'mustache';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import 'dotenv/config';
 
 import { getFunFact } from './src/facts.mjs';
 import { factConstructor } from './src/factConstructor.mjs';

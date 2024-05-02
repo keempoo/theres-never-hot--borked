@@ -1,41 +1,49 @@
 import Mustache from 'mustache';
 import _ from 'lodash';
 import cheerio from 'cheerio';
+import { marked } from 'marked';
 
 import { fetchRedditRSS } from './fetchRedditRSS.mjs';
 import { serpTrendQuery } from './serpAPI.mjs';
 
+marked.use({
+  breaks: true,
+});
+
 function addLineBreaks(str) {
-  return str.split('\n\n').join('<br/><br/>');
+  return str.split('\n').join('<br/>');
 }
 
 export async function factConstructor(fact) {
+  const copy = fact.copy.replaceAll('\n  ', '\n');
   switch (fact.id) {
-    case 'twoxchromosomes': {
-      const url = 'https://www.reddit.com/r/TwoXChromosomes/top/.rss?t=day';
-      const response = await fetchRedditRSS(url);
-      return addLineBreaks(fact.copy.split('{{data}}').join(response));
+    case 'reddit': {
+      const postTemplate = `<strong>“{{title}}”</strong><br/><em>Last Updated {{time}}</em><br/>{{{content}}}<br/>`;
+      const response = await fetchRedditRSS(fact.url, postTemplate);
+      const template = marked.parse(copy);
+      return Mustache.render(template, { DATA: response });
     }
 
-    case 'legaladvice': {
-      const url =
-        'https://www.reddit.com/r/legaladvice/search/.rss?q=Maternity%20leave&restrict_sr=1/';
-      const response = await fetchRedditRSS(url);
-      return addLineBreaks(fact.copy.split('{{data}}').join(response));
+    case 'reddit-title-only': {
+      const postTemplate = `<div class="center"><strong>{{subreddit}}</strong> • {{time}}<br/><h3>{{title}}</h3><br/></div>`;
+      const response = await fetchRedditRSS(fact.url, postTemplate);
+      const template = marked.parse(copy);
+      return Mustache.render(template, { DATA: response });
     }
 
-    case 'kim_sb8': {
+    case 'trends': {
       const queryParams = {
-        q: 'KIM KARDASHIAN, SB 8 TEXAS',
         geo: 'US',
         data_type: 'TIMESERIES',
         date: 'now 1-d',
+        ...fact.query,
       };
       const response = await serpTrendQuery({ queryParams });
       const data = _.chain(response.interest_over_time.averages)
         .keyBy('query')
         .mapValues('value')
         .value();
+      console.log({ data });
       const chartResponse = await fetch(
         response.search_metadata.prettify_html_file
       );
@@ -50,12 +58,10 @@ export async function factConstructor(fact) {
         .html($('line-chart-directive'))
         .replaceAll('\n', '');
 
-      return addLineBreaks(
-        Mustache.render(fact.copy, { ...data, CHART: chart })
-      );
+      return marked.parse(Mustache.render(copy, { ...data, CHART: chart }));
     }
 
     default:
-      return addLineBreaks(fact.copy);
+      return marked.parse(copy);
   }
 }

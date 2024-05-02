@@ -10,20 +10,20 @@
 # image: is an optional field that contains the URL of an image to be displayed with the fact
 
 ---
-- copy: |-
-
+# fact 1
+- title: Viagra vs PPD
+  copy: |-
     ACCORDING TO GOODRX, THE CURRENT GENERIC PRICE FOR
 
 
-    ⬛ <strong>VIAGRA IS $2.00 PER DOSE</strong> Erectile Dysfunction 
+    ⬛ **VIAGRA IS $2.00 PER DOSE** Erectile Dysfunction 
 
 
-    ⬜ <strong>ZURZUVAE $15,900.00 PER 14-DAY COURSE</strong> Postpartum Depression
+    ⬜ **ZURZUVAE $15,900.00 PER 14-DAY COURSE** Postpartum Depression
 
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +   
-
+    ---
 
     ⬛ AVERAGE MALE TIME LOST .............................. 5 ½ MINUTES
 
@@ -31,82 +31,81 @@
     ⬜ AVERAGE FEMALE TIME LOST ............................. 3-6 MONTHS
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    ---
 
-- copy: |-
-
+# fact 2
+- title: Brock Turner
+  copy: |-
     THE RAPIST BROCK TURNER, IS NOW GOING BY HIS MIDDLE NAME, ALLEN (AKA BROCK ALLEN TURNER AKA FORMER STANFORD STUDENT ATHLETE AKA DAYTON, OHIO RESIDENT) 
 
     Brock Allen Turner, the convicted rapist who raped an unconscious girl behind a dumpster. Brock Allen Turner, the rapist who was convicted of sex crimes and is on the sex offender's registry, currently lives in Dayton, Ohio.
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  
+    ---
 
+    ⬛   **THE FATHER OF THE RAPIST BROCK "ALLEN" TURNER SAID 6 MONTHS IN JAIL WAS A STEEP PRICE TO PAY FOR "20 MINUTES OF 'ACTION'"**
 
-    ⬛   <strong>THE FATHER OF THE RAPIST BROCK "ALLEN" TURNER SAID 6 MONTHS IN JAIL WAS A STEEP PRICE TO PAY FOR "20 MINUTES OF 'ACTION'"</strong>
+    ---
 
+  image: https://cdn.vox-cdn.com/thumbor/SOCGjSGmyekzM4eiJ8i6wtILiMg=/0x0:693x508/1200x800/filters:focal(292x199:402x309)/cdn.vox-cdn.com/uploads/chorus_image/image/57637691/Screen_Shot_2017_11_16_at_12.51.27_PM.0.png
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
-
-  image:
-    https://cdn.vox-cdn.com/thumbor/SOCGjSGmyekzM4eiJ8i6wtILiMg=/0x0:693x508/1200x800/filters:focal(292x199:402x309)/cdn.vox-cdn.com/uploads/chorus_image/image/57637691/Screen_Shot_2017_11_16_at_12.51.27_PM.0.png
-
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
-
-- copy: |-
+# fact 3
+- title: Maternity Leave
+  copy: |-
     THE TOP 3 POSTS ON THE LEGAL ADVICE SUBREDDIT CONCERNING MATERNITY LEAVE ARE:
 
-    {{data}}
-  id: legaladvice
+    {{{DATA}}}
+  id: reddit
+  url: 'https://www.reddit.com/r/legaladvice/search/.rss?q=Maternity%20leave&restrict_sr=1/'
 
-- copy: |-
+# fact 4
+- title: Two X Chromosomes
+  copy: |-
     THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE
 
-    {{data}}
-  id: twoxchromosomes
+    {{{DATA}}}
+  id: reddit-title-only
+  url: https://www.reddit.com/r/TwoXChromosomes/top/.rss?t=day
 
-- copy: |-
-
-    <strong>THE CURRENT NUMBER OF HOUSEHOLDS TAKING CARE OF ONE OR MORE RELATIVES BY GENDER:</strong>
-
-
-    <strong>📈 FEMALE HOUSEHOLDER</strong> Top Line................ <strong>15,032 </strong>
-
-    <strong>📉 MALE HOUSEHOLDER</strong> Bottom Line ..................  <strong>7,128 </strong>
-
-    image: https://fred.stlouisfed.org/graph/fredgraph.png?g=1ebuZ
+# fact 5
+- title: Householders
+  copy: |-
+    **THE CURRENT NUMBER OF HOUSEHOLDS TAKING CARE OF ONE OR MORE RELATIVES BY GENDER:**
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  
+    **📈 FEMALE HOUSEHOLDER** Top Line ................... **15,032**
+
+    **📉 MALE HOUSEHOLDER** Bottom Line ..................  **7,128**
+
+    ![householder gender breakdown](https://fred.stlouisfed.org/graph/fredgraph.png?g=1ebuZ)
+
+    ---
 
     A “householder” is a person whose name the housing unit is rented or owned and is at least 15 years old.
 
     Family household is a household in which there is at least 1 person present who is related to the householder by birth, marriage or adoption. Family is used to refer to a family household. In general, family consists of those related to each other by birth, marriage or adoption.
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    ---
 
-- copy: |-
-
-    <strong>SCHOOLS CALL MOTHERS 1.4 TIMES MORE THAN FATHERS WHEN THERE IS AN ISSUE WITH THEIR STUDENT.</strong> 
-
-
-    ⚫ <strong>59% CALLS TO MOTHER</strong>
+# fact 6
+- title: Who You Gonna Call
+  copy: |-
+    **SCHOOLS CALL MOTHERS 1.4 TIMES MORE THAN FATHERS WHEN THERE IS AN ISSUE WITH THEIR STUDENT.** 
 
 
-    ⚪ <strong>41% CALLS TO FATHER</strong>
+    ⚫ **59% CALLS TO MOTHER**
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  
-
-    <strong>EVEN WHEN FATHERS STATE THEY THE PARENT THE SCHOOL NEEDS TO CALL FIRST, MOTHERS STILL GET 26% OF THE CALLS.</strong> 
+    ⚪ **41% CALLS TO FATHER**
 
 
-    image: https://www.muthagoose.art/lusterwoo/whoyougonnacallchart.jpg
+    ---
 
+    **EVEN WHEN FATHERS STATE THEY THE PARENT THE SCHOOL NEEDS TO CALL FIRST, MOTHERS STILL GET 26% OF THE CALLS.**
+  image: https://www.muthagoose.art/lusterwoo/whoyougonnacallchart.jpg
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
-
-- copy: |-
-
+# fact 7
+- title: Widow’s Reward
+  copy: |-
     UPWARDS OF 75 PERCENT OF ALL CAREGIVERS ARE WOMEN.
 
     THE AVERAGE CAREGIVER IS A MARRIED WOMAN, AGE 46, WORKING OUTSIDE THE HOME FOR $35,000 ANNUALLY.
@@ -114,54 +113,55 @@
     FEMALE CAREGIVERS MAY SPEND AS MUCH AS 50 PERCENT MORE TIME PROVIDING CARE THAN MEN.
 
 
-    <strong>$ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $
+    **$ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $**
 
 
-    A COMMON SCENARIO IS AN OLDER WOMAN WHO CARES FOR HER HUSBAND ONLY TO DISCOVER LATER THAT THERE ARE FEW FINANCIAL OR OTHER RESOURCES TO MEET HER OWN NEEDS FOR ASSISTANCE. 
+    **A COMMON SCENARIO IS AN OLDER WOMAN WHO CARES FOR HER HUSBAND ONLY TO DISCOVER LATER THAT THERE ARE FEW FINANCIAL OR OTHER RESOURCES TO MEET HER OWN NEEDS FOR ASSISTANCE.**
 
 
-    $ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $    
-    </strong>
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  
+    **$ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $**
+
+    ---
 
     ONE 1998 STUDY FOUND THAT HALF OF BABY BOOMER WOMEN CAREGIVERS SUFFERED “FINANCIAL HARDSHIP” AS A RESULT OF THEIR CAREGIVING.THE ECONOMIC VALUE OF THE INFORMAL CARE PROVIDED BY WOMEN IS ESTIMATED AT SOMEWHERE BETWEEN $148 BILLION AND $188 BILLION ANNUALLY.
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +    
+    ---  
 
-    <strong> <em>⬛ AVERAGE MALE TIME LOST ........................... 0 (Null) 
+    ⬛ ***AVERAGE MALE TIME LOST ........................... 0 (Null)*** 
 
-    ⬜ AVERAGE FEMALE TIME LOST.......................... 3-7 Years</strong> </em()
+    ⬜ ***AVERAGE FEMALE TIME LOST.......................... 3-7 Years*** 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    ---
 
-- copy: |-
-
-
+# fact 8
+- title: First Date
+  copy: |-
     ARE WE DATING THE SAME GUY? IS A NETWORK OF OVER 150 FACEBOOK GROUPS WITH A TOTAL OF ROUGHLY 3 MILLION MEMBERS WHO SHARE IMAGES OF MEN THEY MATCHED WITH ON DATING NETWORKS TO INQUIRE ABOUT POTENTIAL DANGEROUS BEHAVIORS SUCH AS LIARS, CHEATERS, ABUSE, ANYONE WHO EXHIBITS ANY TYPE OF TOXIC OR DANGEROUS BEHAVIOR. THAT IS COMPLETELY VOLUNTEER RUN.  
 
     THIS IS A SAFE SPACE WHERE WOMEN CAN ASK FOR ADVICE AND RELATIONSHIP SUPPORT, AS WELL AS POST ANYTHING ELSE DATING RELATED THAT CAN HELP BRING US TOGETHER, KEEP US SAFE, OR HELP US HELP EACH OTHER.
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +    
+    ---  
 
-    <strong>TIME RESEARCHING SOCIAL MEDIA PROFILES BEFORE GOING ON A PHYSICAL DATE WITH SOMEONE YOU MET ONLINE:</strong> 
-
-
-    <em>⬛ AVERAGE MALE ................ 58 MINUTES
-
-    ⬜ AVERAGE FEMALE .............. 71 MINUTES</em>
+    **TIME RESEARCHING SOCIAL MEDIA PROFILES BEFORE GOING ON A PHYSICAL DATE WITH SOMEONE YOU MET ONLINE:** 
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    ⬛ *AVERAGE MALE* ................ *58 MINUTES*
 
-- copy: |-
+    ⬜ *AVERAGE FEMALE* .............. *71 MINUTES*
 
-    <strong>WOMEN, AS WELL AS LOW-INCOME PATIENTS, EXPERIENCED LONGER DELAYS IN DIAGNOSIS. THEY WERE MORE LIKELY THAN MEN TO SEE 10 OR MORE MONTHS PASS BETWEEN THEIR FIRST VISIT TO A DOCTOR AND DIAGNOSIS AND TO HAVE MADE MORE THAN FIVE VISITS TO A DOCTOR PRIOR TO DIAGNOSIS.
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  
+    ---
+
+# fact 9
+- title: Medical Diagnosis
+  copy: |-
+    **WOMEN, AS WELL AS LOW-INCOME PATIENTS, EXPERIENCED LONGER DELAYS IN DIAGNOSIS. THEY WERE MORE LIKELY THAN MEN TO SEE 10 OR MORE MONTHS PASS BETWEEN THEIR FIRST VISIT TO A DOCTOR AND DIAGNOSIS AND TO HAVE MADE MORE THAN FIVE VISITS TO A DOCTOR PRIOR TO DIAGNOSIS.
+
+    ---
 
     ⬛ AVERAGE MALE TIME FOR DIAGNOSIS................... 4-5 YEARS
 
-    ⬜ AVERAGE FEMALE TIME FOR DIAGNOSIS................. 4-7 YEARS</strong>
+    ⬜ AVERAGE FEMALE TIME FOR DIAGNOSIS................. 4-7 YEARS**
 
 
     🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁  🐁   
@@ -180,106 +180,143 @@
     Researchers find it easier to study men and extrapolate the results to women rather than include women who may have variables such as being postmenopausal versus premenopausal or pregnant or postpartum which have had negative effects on drug dosing.
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    ---
 
-- copy: |-
+# fact 10
+- title: Exercise Hours
+  copy: |-
+    **⬤ AVAILABLE MALE HOURS TO EXERCISE 24 HOURS**
 
-    <strong>⬤ AVAILABLE MALE HOURS TO EXERCISE 24 HOURS
-
-    ◑ AVAILABLE FEMALE HOURS TO EXERCISE 12 HOURS</strong>
-
-
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +   
-
-    <strong>TO INCREASE THESE HOURS, THE FOLLOWING SAFETY PRECAUTIONS NEED TO BE MET:</strong>
-
-    ★ <em>VARY ROUTES ............................10-45 MINUTES</em>
-    ★ <em>VARY SCHEDULE ..........................15 MINUTES </em>
-    ★ <em>TAKE SELF-DEFENSE CLASS ................6 WEEKS</em>
+    **◑ AVAILABLE FEMALE HOURS TO EXERCISE 12 HOURS**
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    --- 
 
-    <strong>TO EXERCISE AT NIGHT AT ALL, WOMEN MUST CONSIDER:</strong>
+    **TO INCREASE THESE HOURS, THE FOLLOWING SAFETY PRECAUTIONS NEED TO BE MET:**
 
-    ★ <em>WEARING ONLY ONE EARBUD</em>
-    ★ <em>CARRY MACE/WEAPON</em>
-    ★ <em>BE FASTER/STRONGER</em>
-    ★ <em>GOING IN A GROUP</em>
-
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
-
-- copy: |-
-
-    <strong>HERE IS A LIST OF THE MOST RECENT CRIMES RECORDED BY THE AUSTIN POLICE DEPARTMENT HIGHLIGHTING THOSE WITH THE FOLLOWING PHRASES:</strong>
-
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +   
-
-    ⬤ <em>ASSAULT BY THREAT FAM/DATING</em>
-    ⬤ <em>FAMILY DISTURBANCE</em>
-    ⬤ <em>RAPE</em>
-    ⬤ <em>ASSAULT W/INJURY-FAM/DATE VIOLENCE</em>
+    ★ *VARY ROUTES* ............................ *10-45 MINUTES*
+    ★ *VARY SCHEDULE* .......................... *15 MINUTES*
+    ★ *TAKE SELF-DEFENSE CLASS* ................ *6 WEEKS*
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  
+    ---
+
+    **TO EXERCISE AT NIGHT AT ALL, WOMEN MUST CONSIDER:**
+
+    ★ *WEARING ONLY ONE EARBUD*
+    ★ *CARRY MACE/WEAPON*
+    ★ *BE FASTER/STRONGER*
+    ★ *GOING IN A GROUP*
+
+    ---
+
+# fact 11
+- title: APD Assaults
+  copy: |-
+    **HERE IS A LIST OF THE MOST RECENT CRIMES RECORDED BY THE AUSTIN POLICE DEPARTMENT HIGHLIGHTING THOSE WITH THE FOLLOWING PHRASES:**
+
+    --- 
+
+    ⬤ *ASSAULT BY THREAT FAM/DATING*
+    ⬤ *FAMILY DISTURBANCE*
+    ⬤ *RAPE*
+    ⬤ *ASSAULT W/INJURY-FAM/DATE VIOLENCE*
+
+
+    ---
 
     <div><iframe width="500px" title="Crime Incidence Descending" height="425px" src="https://data.austintexas.gov/w/rfbq-staz/7r79-5ncn?cur=lr3dJC6abLg&from=root" frameborder="0"scrolling="no"><a href="https://data.austintexas.gov/Public-Safety/Crime-Incidence-Descending/rfbq-staz" title="Crime Incidence Descending" target="_blank">Crime Incidence Descending</a></iframe></div> 
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    ---
 
-- copy: |-
+# fact 12
+- title: Time at Doctor’s
+  copy: |-
     ➤➤➤ A survey by the University of Chicago found that 64% of women have brought a male partner or family member to a doctor's appointment in order to be taken more seriously.
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +   
+    --- 
 
     ➤➤➤ A study by the National Women's Health Network found that women who bring a male partner to their appointment are more likely to be prescribed pain medication for chronic pain compared to those who attend alone
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  
+    ---
 
 
     ⬛ ⬜ BOTH MALE AND FEMALE'S TIME WASTED
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    ---
 
-- copy: |-
-    <div class="center">What’s more interesting according to Google?</div>
+# fact 13
+- title: Kim Kardashian vs SB8
+  copy: |-
+    <div class="center">
+    What’s more interesting according to Google?
+
+    =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =
+
+    **“KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “SB 8 TEXAS”**
+    </div>
 
 
-    =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
-
-    <div class="center"><strong>“KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “SB 8 TEXAS”</strong></div>
-
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  
+    ---
 
     {{{CHART}}}
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    ---
 
-    Results today:
-    <ul>
-    <li>Kim Kardashian: {{KIM KARDASHIAN}}</li> 
-    <li>SB 8 Texas: {{SB 8 TEXAS}}</li>
-    </ul>
+    Relative popularity:
+    - Kim Kardashian: {{KIM KARDASHIAN}}
+    - SB 8 Texas: {{SB 8 TEXAS}}
+    ---
+  id: trends
+  query:
+    q: KIM KARDASHIAN, SB 8 TEXAS,
+    date: now 1-d,
 
+# fact 14
+- title: Kim Kardashian vs Arizona Territory's 1864 Abortion Law
+  copy: |-
+    <div class="center">
+    What's more interesting according to Google?
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
-  id: kim_sb8
-
-- copy: |-
-
-
-    <div class="center">What's more interesting according to Google?</div>
-
-    <strong>
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
 
-    <div class="center">“KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Arizona Territory's 1864 Abortion Law”
+    “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Arizona Territory's 1864 Abortion Law”
+    </div>
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  </strong>
+    ---
+
+    {{{CHART}}}
+
+    ---
+
+    Results today:
+    - Kim Kardashian: {{KIM KARDASHIAN}}
+    - Arizona Territory's 1864 Abortion Law: {{ARIZONA TERRITORYS 1864 ABORTION LAW}}
+
+
+    ---
+  id: trends
+  query:
+    q: KIM KARDASHIAN, ARIZONA TERRITORY'S 1864 ABORTION LAW,
+    date: now 1-d,
+
+# fact 15
+- title:
+  copy: |-
+    <div class="center">What's more interesting according to Google?</div>
+
+
+    =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
+
+    <div class="center">
+    “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “EMTALA” Emergency Medical Treatment and Active Labor Act
+    </div>
+
+    ---
 
     embed the chart from SERP API
     login keempoo@gmail.com 
@@ -288,50 +325,22 @@
     Example of page layout:
     https://docs.google.com/document/d/1LomgDp27MFEjZ1VnlrJSriwvfvKqtJ8TzlvLTJbEmkQ/edit#heading=h.yj39959xzxz4
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
-
-    Results today:
-    <ul><li>Kim Kardashian</li> Insert NUMBER
-    <li>Arizona Territory's 1864 Abortion Law</li></ul>
-
-
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
-
-- copy: |-
-
-
-    <div class="center">What's more interesting according to Google?</div>
-
-    <strong>
-    =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
-
-    <div class="center">“KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “EMTALA” Emergency Medical Treatment and Active Labor Act
-
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  </strong>
-
-    embed the chart from SERP API
-    login keempoo@gmail.com 
-    password Austin78735!
-    Google Trends API returns a chart, I checked on the documentation once logged in
-    Example of page layout:
-    https://docs.google.com/document/d/1LomgDp27MFEjZ1VnlrJSriwvfvKqtJ8TzlvLTJbEmkQ/edit#heading=h.yj39959xzxz4
-
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    ---
 
     Results today:
     <ul><li>Kim Kardashian</li> Insert NUMBER
     <li>Alabama EMTALA</li></ul>
 
 
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+    ---
 
-- copy: |-
+# fact 16
+- title:
+  copy: |-
+    <div class="center">**WHO HAS MORE LEISURE TIME MEN OR WOMEN**</div>
 
-
-    <div class="center"><strong>WHO HAS MORE LEISURE TIME MEN OR WOMEN</strong></div>
-
-    <strong>
-    +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  </strong>
+    **
+    ---**
 
     embed the results from SERP API
     login keempoo@gmail.com 
@@ -340,16 +349,17 @@
     Example of page layout:
     https://docs.google.com/document/d/1LomgDp27MFEjZ1VnlrJSriwvfvKqtJ8TzlvLTJbEmkQ/edit#heading=h.dxm9o9974kdf
 
-       +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+       ---
 
-- copy: |-
+# fact 17
+- title:
+  copy: |-
     <div class="center">
-     🔎 🔎 🔎 🔎 A QUICK RESEARCH ON REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍
+     🔎 🔎 🔎 🔎 A QUICK SEARCH ON REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍
 
-     <strong>“DOCTOR WON'T APPROVE HYSTERECTOMY”</strong></div>
+     **“DOCTOR WON'T APPROVE HYSTERECTOMY”**
+     </div>
      
-     see reddit rss format here
-     https://docs.google.com/document/d/1LomgDp27MFEjZ1VnlrJSriwvfvKqtJ8TzlvLTJbEmkQ/edit#heading=h.1vb3kbs9ouj
-
-
-     +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+     {{{DATA}}}
+  id: reddit-title-only
+  url: https://www.reddit.com/search/.rss?q=doctor+won%27t+approve+hysterectomy+&type=link&cId=a2eb7335-6c14-47ef-8b51-2aeee6b6d815&iId=c8bc429d-bf62-468f-a2f0-9297dd842039

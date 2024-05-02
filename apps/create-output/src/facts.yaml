@@ -339,8 +339,8 @@
   copy: |-
     <div class="center">**WHO HAS MORE LEISURE TIME MEN OR WOMEN**</div>
 
-    **
-    ---**
+
+    ---
 
     embed the results from SERP API
     login keempoo@gmail.com 
@@ -349,7 +349,7 @@
     Example of page layout:
     https://docs.google.com/document/d/1LomgDp27MFEjZ1VnlrJSriwvfvKqtJ8TzlvLTJbEmkQ/edit#heading=h.dxm9o9974kdf
 
-       ---
+    ---
 
 # fact 17
 - title:

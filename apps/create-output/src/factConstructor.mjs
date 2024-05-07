@@ -45,7 +45,7 @@ export async function factConstructor(fact) {
         .value();
       console.log({ data });
       const chartResponse = await fetch(
-        response.search_metadata.prettify_html_file
+        response.search_metadata.prettify_html_file,
       );
       const body = await chartResponse.text();
       const $ = cheerio.load(body);

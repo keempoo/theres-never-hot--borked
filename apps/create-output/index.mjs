@@ -15,7 +15,7 @@ const OUTPUT_FOLDER = 'dist';
 
 const OUTPUT_FILE = path.join(
   OUTPUT_FOLDER,
-  'theres-never-time-printer-output.html'
+  'theres-never-time-printer-output.html',
 );
 
 const TEMPLATE_FILE = path.join(__dirname, 'src', 'template.html');
@@ -45,7 +45,7 @@ async function createFile() {
     minute: '2-digit',
   });
   // take the index of the next fact to be printed from the command line arguments
-  const nextFactIndex = process.argv.slice(2)
+  const nextFactIndex = process.argv.slice(2).length
     ? // start fact count at 1 for ease of use for users
       Number(process.argv.slice(2)) - 1
     : 0;

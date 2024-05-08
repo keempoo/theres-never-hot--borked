@@ -9,7 +9,8 @@
 # id: is an optional field that is used to identify the fact in the code where API data ia added
 # image: is an optional field that contains the URL of an image to be displayed with the fact
 
----
+`+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+
 # fact 1: Viagra 
   copy: |-
     **ACCORDING TO GOODRX, THE CURRENT GENERIC PRICE FOR**  
@@ -19,14 +20,14 @@
     ⬜ **ZURZUVAE $15,900.00 PER 14-DAY COURSE** Postpartum Depression
     \
     
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+      `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
     \
     ⬛ AVERAGE MALE TIME LOST .............................. 5 ½ MINUTES  
     
     ⬜ AVERAGE FEMALE TIME LOST ............................. 3-6 MONTHS  
     \
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
 
-    &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  &#43;  
     
 
 # fact 2 Brock Turner
@@ -47,42 +48,44 @@
 # fact 3
 - title: Maternity Leave
   copy: |-
-    THE TOP 3 POSTS ON THE LEGAL ADVICE SUBREDDIT CONCERNING MATERNITY LEAVE ARE:
+    \  
+    THE TOP 3 POSTS ON THE LEGAL ADVICE SUBREDDIT CONCERNING MATERNITY LEAVE ARE:  
+    \
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
 
-    ---
 
 
     {{{DATA}}}
   id: reddit
   url: 'https://www.reddit.com/r/legaladvice/search/.rss?q=Maternity%20leave&restrict_sr=1/'
 
-# fact 4
-- title: Two X Chromosomes
+# fact 4: Two X Chromosomes
   copy: |-
-    THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE
+    \  
+    THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE  
+    \
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
 
-    ---
 
     {{{DATA}}}
   id: reddit-title-only
   url: https://www.reddit.com/r/TwoXChromosomes/top/.rss?t=day
 
-# fact 5
-- title: Householders
+# fact 5: Householders
   copy: |-
-    **THE CURRENT NUMBER OF HOUSEHOLDS TAKING CARE OF ONE OR MORE RELATIVES BY GENDER:**
+    \  
+    **THE CURRENT NUMBER OF HOUSEHOLDS TAKING CARE OF ONE OR MORE RELATIVES BY GENDER:**  
+    \
+    **&#128200; &#129157; FEMALE HOUSEHOLDER** Top Line ................... **15,032**
 
+    **&#128201; U+&#129158; MALE HOUSEHOLDER** Bottom Line ..................  **7,128**
 
-    **⇱ &#128200; FEMALE HOUSEHOLDER** Top Line ................... **15,032**
-
-    **⇲ MALE HOUSEHOLDER** Bottom Line ..................  **7,128**
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    \
     A “householder” is a person whose name the housing unit is rented or owned and is at least 15 years old.
 
-    Family household is a household in which there is at least 1 person present who is related to the householder by birth, marriage or adoption. Family is used to refer to a family household. In general, family consists of those related to each other by birth, marriage or adoption.
-
+    Family household is a household in which there is at least 1 person present who is related to the householder by birth, marriage or adoption. Family is used to refer to a family household. In general, family consists of those related to each other by birth, marriage or adoption.  
+    \
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
     ![householder gender breakdown](https://fred.stlouisfed.org/graph/fredgraph.png?g=1ebuZ)
@@ -91,43 +94,41 @@
 # fact 6
 - title: Who You Gonna Call
   copy: |-
-    **SCHOOLS CALL MOTHERS 1.4 TIMES MORE THAN FATHERS WHEN THERE IS AN ISSUE WITH THEIR STUDENT.** 
-
-
-    ⚫ **59% CALLS TO MOTHER**
-
-
-    ⚪ **41% CALLS TO FATHER**
-
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
+    **SCHOOLS CALL MOTHERS 1.4 TIMES MORE THAN FATHERS WHEN THERE IS AN ISSUE WITH THEIR STUDENT.**  
+    \
+    &#128383; &#128105; **59% CALLS TO MOTHER**  
+    \
+    &#128383; &#128104; **41% CALLS TO FATHER**  
+    \
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    \
     **EVEN WHEN FATHERS STATE THEY THE PARENT THE SCHOOL NEEDS TO CALL FIRST, MOTHERS STILL GET 26% OF THE CALLS.**
   image: https://www.muthagoose.art/lusterwoo/whoyougonnacallchart.jpg
 
 # fact 7
 - title: Widow's Reward
   copy: |-
-    UPWARDS OF 75 PERCENT OF ALL CAREGIVERS ARE WOMEN.
+    \  
+    UPWARDS OF 75&#65285; OF ALL CAREGIVERS ARE WOMEN.
 
     THE AVERAGE CAREGIVER IS A MARRIED WOMAN, AGE 46, WORKING OUTSIDE THE HOME FOR $35,000 ANNUALLY.
 
-    FEMALE CAREGIVERS MAY SPEND AS MUCH AS 50 PERCENT MORE TIME PROVIDING CARE THAN MEN.
+    FEMALE CAREGIVERS MAY SPEND AS MUCH AS 50 PERCENT MORE TIME PROVIDING CARE THAN MEN.  
+    \
 
+    **$ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $**  
+    \
+
+    **A COMMON SCENARIO IS AN OLDER WOMAN WHO CARES FOR HER HUSBAND ONLY TO DISCOVER LATER THAT THERE ARE FEW FINANCIAL OR OTHER RESOURCES TO MEET HER OWN NEEDS FOR ASSISTANCE.**  
+    \
 
     **$ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $**
 
-
-    **A COMMON SCENARIO IS AN OLDER WOMAN WHO CARES FOR HER HUSBAND ONLY TO DISCOVER LATER THAT THERE ARE FEW FINANCIAL OR OTHER RESOURCES TO MEET HER OWN NEEDS FOR ASSISTANCE.**
-
-
-    **$ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $**
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
-    ONE 1998 STUDY FOUND THAT HALF OF BABY BOOMER WOMEN CAREGIVERS SUFFERED “FINANCIAL HARDSHIP” AS A RESULT OF THEIR CAREGIVING.THE ECONOMIC VALUE OF THE INFORMAL CARE PROVIDED BY WOMEN IS ESTIMATED AT SOMEWHERE BETWEEN $148 BILLION AND $188 BILLION ANNUALLY.
-
-        `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+  \
+    ONE 1998 STUDY FOUND THAT HALF OF BABY BOOMER WOMEN CAREGIVERS SUFFERED “FINANCIAL HARDSHIP” AS A RESULT OF THEIR CAREGIVING.THE ECONOMIC VALUE OF THE INFORMAL CARE PROVIDED BY WOMEN IS ESTIMATED AT SOMEWHERE BETWEEN $148 BILLION AND $188 BILLION ANNUALLY.  
+  \
+   `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
 
     ⬛ ***AVERAGE MALE TIME LOST ........................... 0 (Null)*** 
 

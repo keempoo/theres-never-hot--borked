@@ -9,6 +9,6 @@ export function serpTrendQuery({ queryParams }) {
     },
     (json) => {
       return json;
-    }
+    },
   );
 }

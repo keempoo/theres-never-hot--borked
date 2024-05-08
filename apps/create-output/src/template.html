@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -15,16 +15,25 @@
         /* add an inch margin to avoid printer cut-off */
         margin: 10mm 25mm 0;
       }
+      .wrap {
+        width: 700px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
       img {
         max-width: 100%;
         height: auto;
       }
       header {
-        padding: 20px 0;
+        margin: 20px 0;
+        padding-top: 20px;
         text-align: center;
       }
       h1, h2, h3, h4, h5, h6 {
         margin: 0;
+      }
+      code {
+        white-space: nowrap;
       }
       hr {
         border: none;
@@ -41,7 +50,6 @@
         display: block;
         margin: 0 auto;
         font-family: inherit;
-        padding: 20px 0;
         line-height: 1.5;
       }
       .center {
@@ -51,13 +59,14 @@
   </head>
 
   <body>
-    <header>
-      {{title}}
-      <p>
-        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-        = = = = = = = = = = = = = = = = = =
-      </p>
-      <pre class="bing-bong">
+    <div class="wrap">
+      <header>
+        {{title}}
+        <p>
+          = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+          = = = = = = = = = = = = = = = = = = =
+        </p>
+        <pre class="bing-bong">
 ██████╗ ██╗███╗   ██╗ ██████╗     ██████╗  ██████╗ ███╗   ██╗ ██████╗ ██╗
 ██╔══██╗██║████╗  ██║██╔════╝     ██╔══██╗██╔═══██╗████╗  ██║██╔════╝ ██║
 ██████╔╝██║██╔██╗ ██║██║  ███╗    ██████╔╝██║   ██║██╔██╗ ██║██║  ███╗██║
@@ -65,16 +74,17 @@
 ██████╔╝██║██║ ╚████║╚██████╔╝    ██████╔╝╚██████╔╝██║ ╚████║╚██████╔╝██╗
 ╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚═╝
 </pre
-      >
-      <strong>THE TIME IS NOW {{currentTime}}</strong>
-      <p>
-        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-        = = = = = = = = = = = = = = = = = =
-      </p>
-    </header>
-    <div class="fun-fact">{{{completedFact}}}</div>
-    {{#image}}
-    <img src="{{{image}}}" alt="" />
-    {{/image}}
+        >
+        <strong>THE TIME IS NOW {{currentTime}}</strong>
+        <p>
+          = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+          = = = = = = = = = = = = = = = = = = =
+        </p>
+      </header>
+      <div class="fun-fact">{{{completedFact}}}</div>
+      {{#image}}
+      <img src="{{{image}}}" alt="" />
+      {{/image}}
+    </div>
   </body>
 </html>

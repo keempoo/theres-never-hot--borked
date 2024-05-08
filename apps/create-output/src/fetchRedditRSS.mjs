@@ -33,7 +33,7 @@ export async function fetchRedditRSS(url, postTemplate) {
           time,
           subreddit,
           content: spacedContent,
-        })
+        }),
       );
       return all;
     }, [])

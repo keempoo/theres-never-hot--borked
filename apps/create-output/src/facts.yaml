@@ -10,40 +10,35 @@
 # image: is an optional field that contains the URL of an image to be displayed with the fact
 
 ---
-# fact 1
-- title: Viagra vs PPD
+# fact 1: Viagra vs PPD
   copy: |-
-    ACCORDING TO GOODRX, THE CURRENT GENERIC PRICE FOR
-
-
+    **ACCORDING TO GOODRX, THE CURRENT GENERIC PRICE FOR**  
+    \
     ⬛ **VIAGRA IS $2.00 PER DOSE** Erectile Dysfunction 
 
-
     ⬜ **ZURZUVAE $15,900.00 PER 14-DAY COURSE** Postpartum Depression
-
-
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
-    ⬛ AVERAGE MALE TIME LOST .............................. 5 ½ MINUTES
-
-
-    ⬜ AVERAGE FEMALE TIME LOST ............................. 3-6 MONTHS
-
+    \
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    \
+    ⬛ AVERAGE MALE TIME LOST .............................. 5 ½ MINUTES  
+    
+    ⬜ AVERAGE FEMALE TIME LOST ............................. 3-6 MONTHS  
+    \
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
-# fact 2
-- title: Brock Turner
+# fact 2: Brock Turner
   copy: |-
+    \
     THE RAPIST BROCK TURNER, IS NOW GOING BY HIS MIDDLE NAME, ALLEN (AKA BROCK ALLEN TURNER AKA FORMER STANFORD STUDENT ATHLETE AKA DAYTON, OHIO RESIDENT) 
 
-    Brock Allen Turner, the convicted rapist who raped an unconscious girl behind a dumpster. Brock Allen Turner, the rapist who was convicted of sex crimes and is on the sex offender's registry, currently lives in Dayton, Ohio.
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
-    ☞   **THE FATHER OF THE RAPIST BROCK "ALLEN" TURNER SAID 6 MONTHS IN JAIL WAS A STEEP PRICE TO PAY FOR "20 MINUTES OF 'ACTION'"**
-
+    Brock Allen Turner, the convicted rapist who raped an unconscious girl behind a dumpster. Brock Allen Turner, the rapist who was convicted of sex crimes and is on the sex offender's registry, currently lives in Dayton, Ohio.  
+    \
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    \
+    &#9940; &#9995;   **THE FATHER OF THE RAPIST BROCK "ALLEN" TURNER SAID 6 MONTHS IN JAIL WAS A STEEP PRICE TO PAY FOR "20 MINUTES OF 'ACTION'"**  &#9995; &#9940;   
+    \
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
   image: https://cdn.vox-cdn.com/thumbor/SOCGjSGmyekzM4eiJ8i6wtILiMg=/0x0:693x508/1200x800/filters:focal(292x199:402x309)/cdn.vox-cdn.com/uploads/chorus_image/image/57637691/Screen_Shot_2017_11_16_at_12.51.27_PM.0.png

@@ -5,65 +5,71 @@
 # Single line breaks are ignored in the final output. To add a line break, use two line breaks (there needs
 # to be a blank line between the two lines of text)
 
-# copy: is a required field that contains the text of the fact
-# id: is an optional field that is used to identify the fact in the code where API data ia added
-# image: is an optional field that contains the URL of an image to be displayed with the fact
+# copy: Required field that contains the text of the fact
+# id: Optional field that is used to indicate that the fact requires special handling
+# image: Optional field that contains the URL of an image to be displayed with the fact. This image is inserted at the bottom of the fact template
 
-`+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+---
+
+## fact 0: TEMPLATE -- Do not modify
+# - title: Pithy Fact title OR no text at all
+#   copy: |-
+#     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat tempus ligula a elementum. Curabitur porttitor, lacus ut consectetur fermentum, diam magna congue risus, non varius elit turpis eu elit. Sed risus massa, egestas a quam ut, lacinia tincidunt risus. 
+#     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+#     Sed nulla libero, aliquam sed pharetra vel, accumsan vel lectus. Nunc in maximus nisi, sit amet iaculis quam. Vivamus augue turpis, semper placerat pretium nec, faucibus vel lectus. Integer nisi felis, finibus a feugiat dignissim, blandit nec sem. Vivamus eu convallis ex, ac efficitur quam. Morbi at pretium sem.
+#   id: reddit OR reddit-title-only OR trends OR leave blank
+#   image: https://picsum.photos/200/300
+
+
 
 # fact 1: Viagra 
-  copy: |-
+- copy: |-
     **ACCORDING TO GOODRX, THE CURRENT GENERIC PRICE FOR**  
-    \
+    
     ⬛ **VIAGRA IS $2.00 PER DOSE** Erectile Dysfunction 
 
     ⬜ **ZURZUVAE $15,900.00 PER 14-DAY COURSE** Postpartum Depression
-    \
     
-      `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
-    \
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    
     ⬛ AVERAGE MALE TIME LOST .............................. 5 ½ MINUTES  
     
     ⬜ AVERAGE FEMALE TIME LOST ............................. 3-6 MONTHS  
-    \
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
 
     
 
 # fact 2 Brock Turner
-  copy: |-
-    \
+- copy: |-
     THE RAPIST BROCK TURNER, IS NOW GOING BY HIS MIDDLE NAME, ALLEN (AKA BROCK ALLEN TURNER AKA FORMER STANFORD STUDENT ATHLETE AKA DAYTON, OHIO RESIDENT) 
 
     Brock Allen Turner, the convicted rapist who raped an unconscious girl behind a dumpster. Brock Allen Turner, the rapist who was convicted of sex crimes and is on the sex offender's registry, currently lives in Dayton, Ohio.  
-    \
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
-    \
+    
     &#9940; &#9995;   **THE FATHER OF THE RAPIST BROCK "ALLEN" TURNER SAID 6 MONTHS IN JAIL WAS A STEEP PRICE TO PAY FOR "20 MINUTES OF 'ACTION'"**  &#9995; &#9940;   
-    \
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
-    \
+    
     image: https://cdn.vox-cdn.com/thumbor/SOCGjSGmyekzM4eiJ8i6wtILiMg=/0x0:693x508/1200x800/filters:focal(292x199:402x309)/cdn.vox-cdn.com/uploads/chorus_image/image/57637691/Screen_Shot_2017_11_16_at_12.51.27_PM.0.png
 
 # fact 3
 - title: Maternity Leave
   copy: |-
-    \  
     THE TOP 3 POSTS ON THE LEGAL ADVICE SUBREDDIT CONCERNING MATERNITY LEAVE ARE:  
-    \
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
 
-
-
+    <br/>
     {{{DATA}}}
   id: reddit
   url: 'https://www.reddit.com/r/legaladvice/search/.rss?q=Maternity%20leave&restrict_sr=1/'
 
 # fact 4: Two X Chromosomes
-  copy: |-
-    \  
+- copy: |-
     THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE  
-    \
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
 
 
@@ -72,20 +78,19 @@
   url: https://www.reddit.com/r/TwoXChromosomes/top/.rss?t=day
 
 # fact 5: Householders
-  copy: |-
-    \  
+- copy: |-
     **THE CURRENT NUMBER OF HOUSEHOLDS TAKING CARE OF ONE OR MORE RELATIVES BY GENDER:**  
-    \
+    
     **&#128200; &#129157; FEMALE HOUSEHOLDER** Top Line ................... **15,032**
 
     **&#128201; U+&#129158; MALE HOUSEHOLDER** Bottom Line ..................  **7,128**
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
-    \
+    
     A “householder” is a person whose name the housing unit is rented or owned and is at least 15 years old.
 
     Family household is a household in which there is at least 1 person present who is related to the householder by birth, marriage or adoption. Family is used to refer to a family household. In general, family consists of those related to each other by birth, marriage or adoption.  
-    \
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
     ![householder gender breakdown](https://fred.stlouisfed.org/graph/fredgraph.png?g=1ebuZ)
@@ -95,40 +100,39 @@
 - title: Who You Gonna Call
   copy: |-
     **SCHOOLS CALL MOTHERS 1.4 TIMES MORE THAN FATHERS WHEN THERE IS AN ISSUE WITH THEIR STUDENT.**  
-    \
+    
     &#128383; &#128105; **59% CALLS TO MOTHER**  
-    \
+    
     &#128383; &#128104; **41% CALLS TO FATHER**  
-    \
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
-    \
+    
     **EVEN WHEN FATHERS STATE THEY THE PARENT THE SCHOOL NEEDS TO CALL FIRST, MOTHERS STILL GET 26% OF THE CALLS.**
   image: https://www.muthagoose.art/lusterwoo/whoyougonnacallchart.jpg
 
 # fact 7
 - title: Widow's Reward
   copy: |-
-    \  
     UPWARDS OF 75&#65285; OF ALL CAREGIVERS ARE WOMEN.
 
     THE AVERAGE CAREGIVER IS A MARRIED WOMAN, AGE 46, WORKING OUTSIDE THE HOME FOR $35,000 ANNUALLY.
 
     FEMALE CAREGIVERS MAY SPEND AS MUCH AS 50 PERCENT MORE TIME PROVIDING CARE THAN MEN.  
-    \
+    
 
     **$ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $**  
-    \
+    
 
     **A COMMON SCENARIO IS AN OLDER WOMAN WHO CARES FOR HER HUSBAND ONLY TO DISCOVER LATER THAT THERE ARE FEW FINANCIAL OR OTHER RESOURCES TO MEET HER OWN NEEDS FOR ASSISTANCE.**  
-    \
+    
 
     **$ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $**
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
-  \
+  
     ONE 1998 STUDY FOUND THAT HALF OF BABY BOOMER WOMEN CAREGIVERS SUFFERED “FINANCIAL HARDSHIP” AS A RESULT OF THEIR CAREGIVING.THE ECONOMIC VALUE OF THE INFORMAL CARE PROVIDED BY WOMEN IS ESTIMATED AT SOMEWHERE BETWEEN $148 BILLION AND $188 BILLION ANNUALLY.  
-  \
-   `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+  
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
 
     ⬛ ***AVERAGE MALE TIME LOST ........................... 0 (Null)*** 
 

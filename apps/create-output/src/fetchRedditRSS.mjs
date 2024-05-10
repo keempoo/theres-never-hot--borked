@@ -27,7 +27,7 @@ export async function fetchRedditRSS(url, postTemplate) {
           : contentWords;
       const spacedContent = content.join(' ').replace('\n', '<br><br>');
       all.push(
-        '<hr/><br/>',
+        '<br/><code>+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +</code><br/><br/>',
         Mustache.render(postTemplate, {
           ...item,
           time,

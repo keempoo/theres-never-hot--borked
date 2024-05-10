@@ -57,12 +57,10 @@
   image: https://cdn.vox-cdn.com/thumbor/SOCGjSGmyekzM4eiJ8i6wtILiMg=/0x0:693x508/1200x800/filters:focal(292x199:402x309)/cdn.vox-cdn.com/uploads/chorus_image/image/57637691/Screen_Shot_2017_11_16_at_12.51.27_PM.0.png
 
 # fact 3: Maternity Leave
-- title: Maternity Leave
-  copy: |-
+- copy: |-
     THE TOP 3 POSTS ON THE LEGAL ADVICE SUBREDDIT CONCERNING MATERNITY LEAVE ARE:  
 
-    <br/>
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    
     <br/>
     {{{DATA}}}
   id: reddit
@@ -72,11 +70,11 @@
 - copy: |-
     THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE  
     
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+      
 
 
     {{{DATA}}}
-  id: reddit-title-only
+  id: reddit
   url: https://www.reddit.com/r/TwoXChromosomes/top/.rss?t=day
 
 # fact 5: Householders

@@ -80,10 +80,10 @@
 # fact 5: Householders
 - copy: |-
     **THE CURRENT NUMBER OF HOUSEHOLDS TAKING CARE OF ONE OR MORE RELATIVES BY GENDER:**  
-    
-    ** ▲ FEMALE HOUSEHOLDER** Top Line ......................... **15,032**
+    <br/>    
+    ▲ FEMALE HOUSEHOLDER Top Line ......................... 15,032
 
-    ** ▼ MALE HOUSEHOLDER** Bottom Line ..................  **7,128**
+    ▼ MALE HOUSEHOLDER Bottom Line ........................  7,128
     <br/>
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
     <br/>    
@@ -96,9 +96,8 @@
     ![householder gender breakdown](https://fred.stlouisfed.org/graph/fredgraph.png?g=1ebuZ)
 
 
-# fact 6
-- title: Who You Gonna Call
-  copy: |-
+# fact 6: Who You Gonna Call
+- copy: |-
     **SCHOOLS CALL MOTHERS 1.4 TIMES MORE THAN FATHERS WHEN THERE IS AN ISSUE WITH THEIR STUDENT.**  
     
     &#128383; &#128105; **59% CALLS TO MOTHER**  

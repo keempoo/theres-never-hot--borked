@@ -233,43 +233,41 @@
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
-# fact 12
-- title: Time at Doctor’s
-  copy: |-
+# fact 12: Time at Doctor's
+- copy: |-
     ➤➤➤ A survey by the University of Chicago found that 64% of women have brought a male partner or family member to a doctor's appointment in order to be taken more seriously.
+    <br/>
 
-
-        `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +` 
-
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +` 
+    <br/>
     ➤➤➤ A study by the National Women's Health Network found that women who bring a male partner to their appointment are more likely to be prescribed pain medication for chronic pain compared to those who attend alone
 
+    <br/>
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    <br/>
 
+    ⬛ ⬜ **BOTH MALE AND FEMALE'S TIME WASTED**
+
+    <br/>
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
-
-    ⬛ ⬜ BOTH MALE AND FEMALE'S TIME WASTED
-
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
-# fact 13
-- title: Kim Kardashian vs SB8
-  copy: |-
+# fact 13: Kim Kardashian vs SB8
+- copy: |-
     <div class="center">
     What's more interesting according to Google?
-
+    <br/>    
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =
-
+    <br/>
     **“KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “SB 8 TEXAS”**
     </div>
-
+    <br/>
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
+    <br/>
     {{{CHART}}}
-
+    <br/>
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
+    <br/>
     Relative popularity:
     - Kim Kardashian: {{KIM KARDASHIAN}}
     - SB 8 Texas: {{SB 8 TEXAS}}
@@ -279,23 +277,22 @@
     q: KIM KARDASHIAN, SB 8 TEXAS,
     date: now 1-d,
 
-# fact 14
-- title: Kim Kardashian vs Arizona Territory's 1864 Abortion Law
-  copy: |-
+# fact 14: Kim Kardashian vs Arizona Territory's 1864 Abortion Law
+- copy: |-
     <div class="center">
     What's more interesting according to Google?
-
+    <br/>
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
-
+    <br/>
     “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Arizona Territory's 1864 Abortion Law”
     </div>
-
+    <br/>
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
+    <br/>
     {{{CHART}}}
-
+    <br/>
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
+    <br/>
     Results today:
     - Kim Kardashian: {{KIM KARDASHIAN}}
     - Arizona Territory's 1864 Abortion Law: {{ARIZONA TERRITORYS 1864 ABORTION LAW}}
@@ -307,56 +304,34 @@
     q: KIM KARDASHIAN, ARIZONA TERRITORY'S 1864 ABORTION LAW,
     date: now 1-d,
 
-# fact 15
-- title:
-  copy: |-
+# fact 15: EMTALA
+- copy: |-
     <div class="center">What's more interesting according to Google?</div>
 
-
+    <br/>
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
-
+    <br/>
     <div class="center">
     “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “EMTALA” Emergency Medical Treatment and Active Labor Act
     </div>
-
+    <br/>
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
-    embed the chart from SERP API
-    login keempoo@gmail.com 
-    password Austin78735!
-    Google Trends API returns a chart, I checked on the documentation once logged in
-    Example of page layout:
-    https://docs.google.com/document/d/1LomgDp27MFEjZ1VnlrJSriwvfvKqtJ8TzlvLTJbEmkQ/edit#heading=h.yj39959xzxz4
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
+    <br/>
     Results today:
-    <ul><li>Kim Kardashian</li> Insert NUMBER
-    <li>Alabama EMTALA</li></ul>
+    - Kim Kardashian: {{KIM KARDASHIAN}}
+    - Alabama EMTALA: {{EMTALA}}
+    <br/>
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
+  id: trends
+  query:
+    q: KIM KARDASHIAN, EMTALA,
+    date: now 1-d,
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
-# fact 16
-- title:
-  copy: |-
-    <div class="center">**WHO HAS MORE LEISURE TIME MEN OR WOMEN**</div>
-
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
-    embed the results from SERP API
-    login keempoo@gmail.com 
-    password Austin78735!
-    Google Search API> Organic search 
-    Example of page layout:
-    https://docs.google.com/document/d/1LomgDp27MFEjZ1VnlrJSriwvfvKqtJ8TzlvLTJbEmkQ/edit#heading=h.dxm9o9974kdf
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-
-# fact 17
-- title:
-  copy: |-
+# fact 17: Hysterechtomy
+- copy: |-
     <div class="center">
      🔎 🔎 🔎 🔎 A QUICK SEARCH ON REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍
 

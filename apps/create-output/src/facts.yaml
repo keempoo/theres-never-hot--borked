@@ -250,6 +250,8 @@
     - Kim Kardashian: {{KIM KARDASHIAN}}
     - SB 8 Texas: {{SB 8 TEXAS}}
 
+    Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
   id: trends
   query:
@@ -275,6 +277,8 @@
     Results today:
     - Kim Kardashian: {{KIM KARDASHIAN}}
     - Arizona Territory's 1864 Abortion Law: {{ARIZONA TERRITORY'S 1864 ABORTION LAW}}
+
+    Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.
 
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
@@ -304,6 +308,8 @@
     - Kim Kardashian: {{KIM KARDASHIAN}}
     - Alabama EMTALA: {{EMTALA}}
     
+    Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.
+
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
   id: trends

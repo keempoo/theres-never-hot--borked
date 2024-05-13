@@ -61,6 +61,8 @@ jobs:
         run: |
           npm run create-output:build -- ${{ steps.fact-index.outputs.INDEX }} 
           npm run create-output:export
+        env:
+          SERP_API_KEY: ${{ vars.SERP_API_KEY }}
 
       - name: Clone print gist repo
         run: |

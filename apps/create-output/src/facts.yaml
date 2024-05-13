@@ -249,38 +249,39 @@
     Relative popularity:
     - Kim Kardashian: {{KIM KARDASHIAN}}
     - SB 8 Texas: {{SB 8 TEXAS}}
+
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
   id: trends
   query:
-    q: KIM KARDASHIAN, SB 8 TEXAS,
-    date: now 1-d,
+    q: KIM KARDASHIAN, SB 8 TEXAS
+    date: now 1-d
 
 # fact 13: Kim Kardashian vs Arizona Territory's 1864 Abortion Law
 - copy: |-
     <div class="center">
     What's more interesting according to Google?
-    <br/>
+    
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
-    <br/>
+    
     “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Arizona Territory's 1864 Abortion Law”
     </div>
-    <br/>
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-    <br/>
+    
     {{{CHART}}}
-    <br/>
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-    <br/>
+    
     Results today:
     - Kim Kardashian: {{KIM KARDASHIAN}}
-    - Arizona Territory's 1864 Abortion Law: {{ARIZONA TERRITORYS 1864 ABORTION LAW}}
+    - Arizona Territory's 1864 Abortion Law: {{ARIZONA TERRITORY'S 1864 ABORTION LAW}}
 
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
   id: trends
   query:
-    q: KIM KARDASHIAN, ARIZONA TERRITORY'S 1864 ABORTION LAW,
-    date: now 1-d,
+    q: KIM KARDASHIAN, ARIZONA TERRITORY'S 1864 ABORTION LAW
+    date: now 1-d
 
 # fact 14: EMTALA
 - copy: |-
@@ -288,23 +289,27 @@
 
     <br/>
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
-    <br/>
+    
     <div class="center">
     “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “EMTALA” Emergency Medical Treatment and Active Labor Act
     </div>
-    <br/>
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-    <br/>
+    
+    {{{CHART}}}
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
     Results today:
     - Kim Kardashian: {{KIM KARDASHIAN}}
     - Alabama EMTALA: {{EMTALA}}
-    <br/>
+    
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
   id: trends
   query:
-    q: KIM KARDASHIAN, EMTALA,
-    date: now 1-d,
+    q: KIM KARDASHIAN, EMTALA
+    date: now 1-d
 
    
 # fact 15: Hysterechtomy

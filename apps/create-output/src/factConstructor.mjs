@@ -10,10 +10,6 @@ marked.use({
   breaks: true,
 });
 
-function addLineBreaks(str) {
-  return str.split('\n').join('<br/>');
-}
-
 export async function factConstructor(fact) {
   const copy = fact.copy.replaceAll('\n  ', '\n');
   switch (fact.id) {
@@ -34,19 +30,22 @@ export async function factConstructor(fact) {
     case 'trends': {
       const queryParams = {
         geo: 'US',
+        google_domain: 'google.com',
+        engine: 'google_trends',
         data_type: 'TIMESERIES',
         date: 'now 1-d',
         ...fact.query,
       };
+      // get data from serp api
       const response = await serpTrendQuery({ queryParams });
       const data = _.chain(response.interest_over_time.averages)
         .keyBy('query')
         .mapValues('value')
         .value();
-      console.log({ data });
       const chartResponse = await fetch(
         response.search_metadata.prettify_html_file,
       );
+      // extract svg chart from page
       const body = await chartResponse.text();
       const $ = cheerio.load(body);
       const svgWidth = $('line-chart-directive svg').attr('width');

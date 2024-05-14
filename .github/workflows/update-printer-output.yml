@@ -13,10 +13,6 @@ jobs:
     env:
       INDEX_DOC_ROOT: ${{ github.workspace }}/INDEX_GIST
       FACT_DOC_ROOT: ${{ github.workspace }}/FACT_GIST
-      FACT_INDEX_GIST_ID: d401c5675c76d26e60dfb4ea0b985137
-      FACT_INDEX_GIST_NAME: theres-never-time-fact-printout-state.txt
-      PRINT_DATA_GIST_ID: 8d3e2bbe443b3312e257d8a856caa29d
-      PRINT_DATA_GIST_NAME: theres-never-time-printer-output.html
 
     steps:
       - name: Checkout
@@ -30,16 +26,16 @@ jobs:
       - name: Clone fact-index gist repo
         run: |
           git config --global url.https://github.com/.insteadOf git://github.com/
-          git clone https://gist.github.com/${{ env.FACT_INDEX_GIST_ID }}.git ${{ env.INDEX_DOC_ROOT }}
+          git clone https://gist.github.com/${{ vars.FACT_INDEX_GIST_ID }}.git ${{ env.INDEX_DOC_ROOT }}
 
       - name: Update fact-index gist file
         id: fact-index
         run: |
           cd ${{ env.INDEX_DOC_ROOT }}
-          OLD_NUM=$(cut -d ',' -f2 ${{ env.FACT_INDEX_GIST_NAME }})
+          OLD_NUM=$(cut -d ',' -f2 ${{ vars.FACT_INDEX_GIST_NAME }})
           NEW_NUM=$(expr $OLD_NUM + 1)
           echo "INDEX=$OLD_NUM" >> $GITHUB_OUTPUT
-          echo $NEW_NUM > ${{ env.FACT_INDEX_GIST_NAME }}
+          echo $NEW_NUM > ${{ vars.FACT_INDEX_GIST_NAME }}
 
       - name: Commit and push changes to fact-index gist
         run: |
@@ -48,7 +44,7 @@ jobs:
           git config user.name "${{ github.actor }}"
           git add .
           git commit -m "Increment index"
-          git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ env.FACT_INDEX_GIST_ID }}.git
+          git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ vars.FACT_INDEX_GIST_ID }}.git
 
       - name: show content
         run: echo "Hello ${{ steps.fact-index.outputs.INDEX }}"
@@ -68,10 +64,10 @@ jobs:
       - name: Clone print gist repo
         run: |
           git config --global url.https://github.com/.insteadOf git://github.com/
-          git clone https://gist.github.com/${{ env.PRINT_DATA_GIST_ID }}.git ${{ env.FACT_DOC_ROOT }}
+          git clone https://gist.github.com/${{ vars.PRINT_DATA_GIST_ID }}.git ${{ env.FACT_DOC_ROOT }}
 
       - name: Override print gist file
-        run: find ./ -name '${{ env.PRINT_DATA_GIST_NAME }}' -exec cp "{}" ${{ env.FACT_DOC_ROOT }}/ \;
+        run: find ./ -name '${{ vars.PRINT_DATA_GIST_NAME }}' -exec cp "{}" ${{ env.FACT_DOC_ROOT }}/ \;
 
       - name: Commit and push changes to print gist
         run: |
@@ -79,5 +75,5 @@ jobs:
           git config user.email "robot@github.com"
           git config user.name "${{ github.actor }}"
           git add .
-          git commit -m "Update ${{ env.PRINT_DATA_GIST_NAME }}"
-          git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ env.PRINT_DATA_GIST_ID }}.git
+          git commit -m "Update ${{ vars.PRINT_DATA_GIST_NAME }}"
+          git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ vars.PRINT_DATA_GIST_ID }}.git

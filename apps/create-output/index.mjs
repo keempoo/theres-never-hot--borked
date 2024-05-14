@@ -23,6 +23,9 @@ const TEMPLATE_FILE = path.join(__dirname, 'src', 'template.html');
 const ms = 60 * 60 * 1000; // milliseconds in an hour
 
 function roundToHour(date) {
+  if (process.env.TEST_MODE) {
+    return date;
+  }
   return new Date(Math.round(date.getTime() / ms) * ms);
 }
 

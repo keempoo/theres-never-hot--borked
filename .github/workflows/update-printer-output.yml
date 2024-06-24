@@ -4,12 +4,12 @@ on:
   push:
     paths:
       - "apps/create-output/**"
-  schedule:
+  # schedule:
     # Gallery hours 10:00 – 22:00
     # At minute 50 past every hour from 9 through 21 on every day-of-week from Monday through Saturday in August.
     # The times is offset to account for Austin GMT-5
-    - cron: "50 15-23 * * 1-6"
-    - cron: "50 0-5 * * 1-6"
+    # - cron: "50 15-23 * * 1-6"
+    # - cron: "50 0-5 * * 1-6"
 jobs:
   run-script:
     runs-on: ubuntu-latest

@@ -11,9 +11,6 @@ on:
     - cron: "50 15-23 * * *"
     - cron: "50 0-5 * * *"
 
-concurrency:
-  cancel-in-progress: true
-
 jobs:
   run-script:
     runs-on: ubuntu-latest

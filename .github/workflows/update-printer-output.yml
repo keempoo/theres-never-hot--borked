@@ -4,12 +4,9 @@ on:
   push:
     paths:
       - "apps/create-output/**"
-  # Gallery hours 10:00 – 22:00
-  # At minute 50 past every hour from 9 through 21.
   # The times is offset to account for Austin GMT-5
-  #schedule:
-   # - cron: "50 15-23 * * *"
-   # - cron: "50 0-5 * * *"
+  schedule:
+    - cron: "50 * * * *"
 
 jobs:
   run-script:

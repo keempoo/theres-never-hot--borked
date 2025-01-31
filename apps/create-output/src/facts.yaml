@@ -49,7 +49,7 @@
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
     
     <div class="center">
-    “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “EMTALA” Emergency Medical Treatment and Active Labor Act
+    “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Federal Abortion Ban"
     </div>
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
@@ -60,7 +60,7 @@
 
     Results today:
     - Kim Kardashian: {{KIM KARDASHIAN}}
-    - Alabama EMTALA: {{EMTALA}}
+    - Federal Abortion Ban: {{Federal Abortion Ban}}
     
     Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.
 
@@ -68,7 +68,7 @@
 
   id: trends
   query:
-    q: KIM KARDASHIAN, EMTALA
+    q: KIM KARDASHIAN, FEDERAL ABORTION BAN
     date: now 1-d
 
 
@@ -163,14 +163,14 @@
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
 
-# fact 9: Kim Kardashian vs Arizona Territory's 1864 Abortion Law
+# fact 9: Kim Kardashian vs Updated DEI Policies for Women
 - copy: |-
     <div class="center">
     What's more interesting according to Google?
     
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
     
-    “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Arizona Territory's 1864 Abortion Law”
+    “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Updated DEI Policies for Women”
     </div>
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
@@ -181,7 +181,7 @@
     
     Results today:
     - Kim Kardashian: {{KIM KARDASHIAN}}
-    - Arizona Territory's 1864 Abortion Law: {{ARIZONA TERRITORY'S 1864 ABORTION LAW}}
+    - Trump DEI Women: {{TRUMP DEI WOMEN}}
 
     Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.
 
@@ -189,7 +189,7 @@
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
   id: trends
   query:
-    q: KIM KARDASHIAN, ARIZONA TERRITORY'S 1864 ABORTION LAW
+    q: KIM KARDASHIAN, TRUMP DEI WOMEN
     date: now 1-d
 
 

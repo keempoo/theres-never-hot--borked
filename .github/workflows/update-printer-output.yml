@@ -6,6 +6,7 @@ on:
       - "apps/create-output/**"
   # The times is offset to account for Austin GMT-5
   schedule:
+    # to switch off fact creation replace cron with "0 0 1 1 *"
     - cron: "50 * * * *"
 
 jobs:

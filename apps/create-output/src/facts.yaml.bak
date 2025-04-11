@@ -1,0 +1,309 @@
+# Indentation is important in this file. To add a new fact copy the existing format
+# The |- at the beginning of the copy field is a YAML multiline string indicator. It allows
+# for the use of newlines in the string.
+
+# Single line breaks are ignored in the final output. To add a line break, use two line breaks (there needs
+# to be a blank line between the two lines of text)
+
+# copy: Required field that contains the text of the fact
+# id: Optional field that is used to indicate that the fact requires special handling
+# image: Optional field that contains the URL of an image to be displayed with the fact. This image is inserted at the bottom of the fact template
+
+---
+
+## fact 0: TEMPLATE -- Do not modify
+# - title: Pithy Fact title OR no text at all
+#   copy: |-
+#     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat tempus ligula a elementum. Curabitur porttitor, lacus ut consectetur fermentum, diam magna congue risus, non varius elit turpis eu elit. Sed risus massa, egestas a quam ut, lacinia tincidunt risus. 
+#     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+#     Sed nulla libero, aliquam sed pharetra vel, accumsan vel lectus. Nunc in maximus nisi, sit amet iaculis quam. Vivamus augue turpis, semper placerat pretium nec, faucibus vel lectus. Integer nisi felis, finibus a feugiat dignissim, blandit nec sem. Vivamus eu convallis ex, ac efficitur quam. Morbi at pretium sem.
+#   id: reddit OR reddit-title-only OR trends OR leave blank
+#   image: https://picsum.photos/200/300
+
+
+
+# fact 1: Viagra 
+- copy: |-
+    **ACCORDING TO GOODRX, THE CURRENT GENERIC PRICE FOR**  
+    
+    ⬛ **VIAGRA IS $2.00 PER DOSE** Erectile Dysfunction 
+
+    ⬜ **ZURZUVAE $15,900.00 PER 14-DAY COURSE** Postpartum Depression
+    
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    
+    ⬛ AVERAGE MALE TIME LOST .............................. 5 ½ MINUTES  
+    
+    ⬜ AVERAGE FEMALE TIME LOST ............................. 3-6 MONTHS  
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+
+    
+# fact 2: EMTALA
+- copy: |-
+    <div class="center">What's more interesting according to Google?</div>
+
+    <br/>
+    =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
+    
+    <div class="center">
+    “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Federal Abortion Ban"
+    </div>
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    
+    {{{CHART}}}
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+    Results today:
+    - Kim Kardashian: {{KIM KARDASHIAN}}
+    - Federal Abortion Ban: {{Federal Abortion Ban}}
+    
+    Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.
+
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+  id: trends
+  query:
+    q: KIM KARDASHIAN, FEDERAL ABORTION BAN
+    date: now 1-d
+
+
+# fact 4: Two X Chromosomes
+- copy: |-
+    THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE  
+    
+      
+
+
+    {{{DATA}}}
+  id: reddit
+  url: https://www.reddit.com/r/TwoXChromosomes/top/.rss?t=day
+
+# fact 5: Householders
+- copy: |-
+    **THE CURRENT NUMBER OF HOUSEHOLDS TAKING CARE OF ONE OR MORE RELATIVES BY GENDER:**  
+    <br/>    
+    ▲ FEMALE HOUSEHOLDER Top Line ......................... 15,032
+
+    ▼ MALE HOUSEHOLDER Bottom Line ........................  7,128
+    <br/>
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    <br/>    
+    A “householder” is a person whose name the housing unit is rented or owned and is at least 15 years old.
+
+    Family household is a household in which there is at least 1 person present who is related to the householder by birth, marriage or adoption. Family is used to refer to a family household. In general, family consists of those related to each other by birth, marriage or adoption.  
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    <br/>
+    ![householder gender breakdown](https://fred.stlouisfed.org/graph/fredgraph.png?g=1ebuZ)
+
+
+# fact 6: Who You Gonna Call
+- copy: |-
+    **SCHOOLS CALL MOTHERS 1.4 TIMES MORE THAN FATHERS WHEN THERE IS AN ISSUE WITH THEIR STUDENT.**  
+    
+    ⬛ **59% CALLS TO MOTHER**  
+    
+    ⬜ **41% CALLS TO FATHER**  
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    
+    EVEN WHEN FATHERS STATE THEY THE PARENT THE SCHOOL NEEDS TO CALL FIRST, MOTHERS STILL GET 26% OF THE CALLS.
+  image: https://www.muthagoose.art/lusterwoo/whoyougonnacallchart.jpg
+
+# fact 7: Widow's Reward
+- copy: |-
+    UPWARDS OF 75&#65285; OF ALL CAREGIVERS ARE WOMEN.
+
+    THE AVERAGE CAREGIVER IS A MARRIED WOMAN, AGE 46, WORKING OUTSIDE THE HOME FOR $35,000 ANNUALLY.
+
+    FEMALE CAREGIVERS MAY SPEND AS MUCH AS 50 PERCENT MORE TIME PROVIDING CARE THAN MEN.  
+    
+    <br/>
+    **$ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $**  
+    
+
+    **A COMMON SCENARIO IS AN OLDER WOMAN WHO CARES FOR HER HUSBAND ONLY TO DISCOVER LATER THAT THERE ARE FEW FINANCIAL OR OTHER RESOURCES TO MEET HER OWN NEEDS FOR ASSISTANCE.**  
+    
+
+    **$ - $ - $ - $ - $ - $ - $ - $ - $ - $ -  REWARD - $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - $**
+
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    <br/>  
+    ONE 1998 STUDY FOUND THAT HALF OF BABY BOOMER WOMEN CAREGIVERS SUFFERED “FINANCIAL HARDSHIP” AS A RESULT OF THEIR CAREGIVING.THE ECONOMIC VALUE OF THE INFORMAL CARE PROVIDED BY WOMEN IS ESTIMATED AT SOMEWHERE BETWEEN $148 BILLION AND $188 BILLION ANNUALLY.  
+    <br/>  
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    <br/>
+    ⬛ ***AVERAGE MALE TIME LOST ........................... 0 (Null)*** 
+
+    ⬜ ***AVERAGE FEMALE TIME LOST.......................... 3-7 Years*** 
+    <br/>
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+# fact 8: First Date
+- copy: |-
+    ARE WE DATING THE SAME GUY? IS A NETWORK OF OVER 150 FACEBOOK GROUPS WITH A TOTAL OF ROUGHLY 3 MILLION MEMBERS WHO SHARE IMAGES OF MEN THEY MATCHED WITH ON DATING NETWORKS TO INQUIRE ABOUT POTENTIAL DANGEROUS BEHAVIORS SUCH AS LIARS, CHEATERS, ABUSE, ANYONE WHO EXHIBITS ANY TYPE OF TOXIC OR DANGEROUS BEHAVIOR. THAT IS COMPLETELY VOLUNTEER RUN.  
+
+    THIS IS A SAFE SPACE WHERE WOMEN CAN ASK FOR ADVICE AND RELATIONSHIP SUPPORT, AS WELL AS POST ANYTHING ELSE DATING RELATED THAT CAN HELP BRING US TOGETHER, KEEP US SAFE, OR HELP US HELP EACH OTHER.
+    <br/>
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    <br/>
+    **TIME RESEARCHING SOCIAL MEDIA PROFILES BEFORE GOING ON A PHYSICAL DATE WITH SOMEONE YOU MET ONLINE:** 
+
+
+    ⬛ *AVERAGE MALE* ................ *58 MINUTES*
+
+    ⬜ *AVERAGE FEMALE* .............. *71 MINUTES*
+    <br/>
+
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+
+# fact 9: Kim Kardashian vs Updated DEI Policies for Women
+- copy: |-
+    <div class="center">
+    What's more interesting according to Google?
+    
+    =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
+    
+    “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Updated DEI Policies for Women”
+    </div>
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    
+    {{{CHART}}}
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    
+    Results today:
+    - Kim Kardashian: {{KIM KARDASHIAN}}
+    - Trump DEI Women: {{TRUMP DEI WOMEN}}
+
+    Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.
+
+
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+  id: trends
+  query:
+    q: KIM KARDASHIAN, TRUMP DEI WOMEN
+    date: now 1-d
+
+
+# fact 10: Medical Diagnosis
+- copy: |-
+    WOMEN, AS WELL AS LOW-INCOME PATIENTS, EXPERIENCED LONGER DELAYS IN DIAGNOSIS. THEY WERE MORE LIKELY THAN MEN TO SEE 10 OR MORE MONTHS PASS BETWEEN THEIR FIRST VISIT TO A DOCTOR AND DIAGNOSIS AND TO HAVE MADE MORE THAN FIVE VISITS TO A DOCTOR PRIOR TO DIAGNOSIS.
+    <br/>
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    <br/>
+    ⬛ AVERAGE MALE TIME FOR DIAGNOSIS................... 4-5 YEARS
+
+    ⬜ AVERAGE FEMALE TIME FOR DIAGNOSIS................. 4-7 YEARS**
+    <br/>
+
+    ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀   
+
+    Female mice were largely excluded from both animal and human clinical trials because of the menstrual cycle. fluctuating hormone levels make data difficult to interpret, results more variable, and research more expensive. while males have the same sex steroid hormones, female hormone levels rise and fall.
+
+
+    ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ 
+
+    Women's pain complaints are often dismissed, not taken seriously or deemed “hysterical", an idea that dates back to 1900 BC in ancient Egypt . 
+
+
+    ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎
+
+
+    Researchers find it easier to study men and extrapolate the results to women rather than include women who may have variables such as being postmenopausal versus premenopausal or pregnant or postpartum which have had negative effects on drug dosing.
+
+
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+# fact 11: Exercise Hours
+- copy: |-
+    **⬤ AVAILABLE MALE HOURS TO EXERCISE 24 HOURS**
+
+    **◑ AVAILABLE FEMALE HOURS TO EXERCISE 12 HOURS**
+    <br/>
+
+        `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +` 
+    
+    **TO INCREASE THESE HOURS, THE FOLLOWING SAFETY PRECAUTIONS NEED TO BE MET:**
+
+    ★ *VARY ROUTES* ............................ *10-45 MINUTES*
+    ★ *VARY SCHEDULE* .......................... *15 MINUTES*
+    ★ *TAKE SELF-DEFENSE CLASS* ................ *6 WEEKS*
+    
+
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    
+    **TO EXERCISE AT NIGHT AT ALL, WOMEN MUST CONSIDER:**
+
+    ★ *WEARING ONLY ONE EARBUD*
+    ★ *CARRY MACE/WEAPON*
+    ★ *BE FASTER OR STRONGER THAN THEIR MALE COUNTERPARTS*
+    ★ *GOING IN A GROUP*
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+
+# fact 12: Time at Doctor's
+- copy: |-
+    ➤➤➤ A survey by the University of Chicago found that 64% of women have brought a male partner or family member to a doctor's appointment in order to be taken more seriously.
+    <br/>
+
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +` 
+    
+    ➤➤➤ A study by the National Women's Health Network found that women who bring a male partner to their appointment are more likely to be prescribed pain medication for chronic pain compared to those who attend alone
+
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    
+    ⬛ ⬜ **BOTH MALE AND FEMALE'S TIME WASTED**
+
+        `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+# fact 13: Kim Kardashian vs SB8
+- copy: |-
+    <div class="center">
+    What's more interesting according to Google?
+    <br/>    
+    =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =
+    <br/>
+    **“KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “SB 8 TEXAS”**
+    </div>
+    <br/>
+
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    <br/>
+    {{{CHART}}}
+    <br/>
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    <br/>
+    Relative popularity:
+    - Kim Kardashian: {{KIM KARDASHIAN}}
+    - SB 8 Texas: {{SB 8 TEXAS}}
+
+    Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.
+    
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+  id: trends
+  query:
+    q: KIM KARDASHIAN, SB 8 TEXAS
+    date: now 1-d
+
+
+# fact 14: Hysterechtomy
+- copy: |-
+    <div class="center">
+     🔎 🔎 🔎 🔎 A QUICK SEARCH ON REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍
+
+     **“DOCTOR WON'T APPROVE HYSTERECTOMY”**
+     </div>
+     
+     {{{DATA}}}
+  id: reddit-title-only
+  url: https://www.reddit.com/search/.rss?q=doctor+won%27t+approve+hysterectomy+&type=link&cId=a2eb7335-6c14-47ef-8b51-2aeee6b6d815&iId=c8bc429d-bf62-468f-a2f0-9297dd842039

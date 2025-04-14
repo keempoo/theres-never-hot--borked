@@ -23,25 +23,41 @@
 
 
 
-# fact 1: Viagra 
+# fact 1: Strange Symptoms 
 - copy: |-
-    **ACCORDING TO GOODRX, THE CURRENT GENERIC PRICE FOR**  
+    **WOMEN ARE DISTRACTED BY MORE THAN JUST THE ODD HOT FLASH. 
+    **OTHER SYMPTOMS INCLUDE:  
     
-    ⬛ **VIAGRA IS $2.00 PER DOSE** Erectile Dysfunction 
+    **STRANGE 
+    ☹ ITCHY EARS
+    ☹ RECEDING GUMS
+    ☹ TINNITUS    
+    ☹ COLD FLASHES
+    ☹ BRAIN FOG
+    ☹ CHANGE IN BODY ODOR
+    ☹ TINGLING FINGERS
+    ☹ DRY EYE
 
-    ⬜ **ZURZUVAE $15,900.00 PER 14-DAY COURSE** Postpartum Depression
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
     
+    **BIZARRE 
+    ☠ BURNING MOUTH SENSATION
+    ☠ FROZEN SHOULDER
+    ☠ TEETH CHILLS
+    ☠ HISTAMINE INTOLERANCE
+    ☠ CHARLIE HORSE
+    ☠ ONE ITCHY NIPPLE
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
     
-    ⬛ AVERAGE MALE TIME LOST .............................. 5 ½ MINUTES  
-    
-    ⬜ AVERAGE FEMALE TIME LOST ............................. 3-6 MONTHS  
-    
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
+    **DIABOLICAL
+    ☢ ELECTRICAL SHOCKS
+    ☢ MISSING OR REDUCTION IN CLITORIS
+    ☢ LOWER JAW GROWTH
+    ☢ VERTIGO
 
     
-# fact 2: EMTALA
+# fact 2: Trends
 - copy: |-
     <div class="center">What's more interesting according to Google?</div>
 
@@ -144,23 +160,16 @@
     <br/>
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
-# fact 8: First Date
+# fact 8: Menopause Subreddit
 - copy: |-
-    ARE WE DATING THE SAME GUY? IS A NETWORK OF OVER 150 FACEBOOK GROUPS WITH A TOTAL OF ROUGHLY 3 MILLION MEMBERS WHO SHARE IMAGES OF MEN THEY MATCHED WITH ON DATING NETWORKS TO INQUIRE ABOUT POTENTIAL DANGEROUS BEHAVIORS SUCH AS LIARS, CHEATERS, ABUSE, ANYONE WHO EXHIBITS ANY TYPE OF TOXIC OR DANGEROUS BEHAVIOR. THAT IS COMPLETELY VOLUNTEER RUN.  
-
-    THIS IS A SAFE SPACE WHERE WOMEN CAN ASK FOR ADVICE AND RELATIONSHIP SUPPORT, AS WELL AS POST ANYTHING ELSE DATING RELATED THAT CAN HELP BRING US TOGETHER, KEEP US SAFE, OR HELP US HELP EACH OTHER.
-    <br/>
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
-    <br/>
-    **TIME RESEARCHING SOCIAL MEDIA PROFILES BEFORE GOING ON A PHYSICAL DATE WITH SOMEONE YOU MET ONLINE:** 
+    THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE  
+    
+      
 
 
-    ⬛ *AVERAGE MALE* ................ *58 MINUTES*
-
-    ⬜ *AVERAGE FEMALE* .............. *71 MINUTES*
-    <br/>
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    {{{DATA}}}
+  id: reddit
+  url: https://www.reddit.com/r/menopause/new/.rss?t=hour
 
 
 # fact 9: Kim Kardashian vs Updated DEI Policies for Women
@@ -296,7 +305,7 @@
     date: now 1-d
 
 
-# fact 14: Hysterechtomy
+# fact 14: Reddit-Title-Only
 - copy: |-
     <div class="center">
      🔎 🔎 🔎 🔎 A QUICK SEARCH ON REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍

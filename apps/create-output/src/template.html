@@ -1,8 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://project.marcphu.com/25/kp/bingbong1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>There’s Never Time</title>
     <style>
       * {
@@ -14,6 +14,7 @@
       body {
         /* add an inch margin to avoid printer cut-off */
         margin: 10mm 25mm 0;
+        font-family: "Courier New", Monospace;
       }
       .wrap {
         width: 700px;
@@ -55,37 +56,38 @@
       .center {
         text-align: center;
       }
+.content {
+	font-size: 13px;
+}
     </style>
   </head>
 
   <body>
     <div class="wrap">
       <header>
-        {{title}}
-        <p>
-          = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-          = = = 
-        </p>
-        <pre class="bing-bong">
+        <pre class="bing-bong">= = = = = = = 
+
 ██████╗ ██╗███╗   ██╗ ██████╗     ██████╗  ██████╗ ███╗   ██╗ ██████╗ ██╗
 ██╔══██╗██║████╗  ██║██╔════╝     ██╔══██╗██╔═══██╗████╗  ██║██╔════╝ ██║
 ██████╔╝██║██╔██╗ ██║██║  ███╗    ██████╔╝██║   ██║██╔██╗ ██║██║  ███╗██║
 ██╔══██╗██║██║╚██╗██║██║   ██║    ██╔══██╗██║   ██║██║╚██╗██║██║   ██║╚═╝
 ██████╔╝██║██║ ╚████║╚██████╔╝    ██████╔╝╚██████╔╝██║ ╚████║╚██████╔╝██╗
 ╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚═╝
-</pre
-        >
-        <strong>THE TIME IS NOW {{currentTime}}</strong>
-        <p>
-          = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-          = = = = = = = = = = = = = = 
-        </p>
+
+            <strong>THE TIME IS NOW {{currentTime}}</strong>
+
+==========================================================================
+</pre>
       </header>
+<div class="content">
       <div class="fun-fact">{{{completedFact}}}</div>
       {{#image}}
-      <br />
-      <img src="{{{image}}}" alt="" />
+      <br>
+      <img src="./marc_files/{{{image}}}" alt="">
       {{/image}}
-    </div>
-  </body>
-</html>
+</div> <!-- .content -->
+    </div> <!-- .wrap -->
+  
+
+
+</body></html>

@@ -25,12 +25,25 @@
 
 # fact 1: Strange Symptoms 
 - copy: |-
+    <div class="center">
     WOMEN ARE DISTRACTED BY MORE THAN JUST THE ODD HOT FLASH. 
-    OTHER SYMPTOMS INCLUDE:  
+    OTHER SYMPTOMS INCLUDE:
+    </div>  
     
-    STRANGE 
-    ITCHY EARS 2
-    RECEDING GUMS
+    **STRANGE** 
+    ☹ ITCHY EARS ☹ RECEDING GUMS ☹ TINNITUS ☹ COLD FLASHES ☹ BRAIN FOG ☹ CHANGE IN BODY ODOR ☹ TINGLING FINGERS ☹ DRY EYE
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+    **BIZARRE**
+    ☠ BURNING MOUTH SENSATION ☠ FROZEN SHOULDER ☠ TEETH CHILLS ☠ HISTAMINE INTOLERANCE ☠ CHARLIE HORSE ☠ ONE ITCHY NIPPLE
+
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+    **DIABOLICAL**
+    ☢ ELECTRICAL SHOCKS ☢ MISSING OR REDUCTION IN CLITORIS ☢ LOWER JAW GROWTH ☢ VERTIGO
+
+    Got a good one for this list? Add it! 
+  image: https://www.muthagoose.art/hot/qr-code.png
     
         
 # fact 2: Trends
@@ -64,7 +77,7 @@
     date: now 1-d
 
 
-# fact 4: Two X Chromosomes
+# fact 3: Two X Chromosomes
 - copy: |-
     THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE  
     
@@ -75,7 +88,7 @@
   id: reddit
   url: https://www.reddit.com/r/TwoXChromosomes/top/.rss?t=day
 
-# fact 5: Householders
+# fact 4: Householders
 - copy: |-
     **THE CURRENT NUMBER OF HOUSEHOLDS TAKING CARE OF ONE OR MORE RELATIVES BY GENDER:**  
     <br/>    
@@ -94,7 +107,7 @@
     ![householder gender breakdown](https://fred.stlouisfed.org/graph/fredgraph.png?g=1ebuZ)
 
 
-# fact 6: Who You Gonna Call
+# fact 5: Who You Gonna Call
 - copy: |-
     **SCHOOLS CALL MOTHERS 1.4 TIMES MORE THAN FATHERS WHEN THERE IS AN ISSUE WITH THEIR STUDENT.**  
     
@@ -107,7 +120,7 @@
     EVEN WHEN FATHERS STATE THEY THE PARENT THE SCHOOL NEEDS TO CALL FIRST, MOTHERS STILL GET 26% OF THE CALLS.
   image: https://www.muthagoose.art/lusterwoo/whoyougonnacallchart.jpg
 
-# fact 7: Widow's Reward
+# fact 6: Widow's Reward
 - copy: |-
     UPWARDS OF 75&#65285; OF ALL CAREGIVERS ARE WOMEN.
 
@@ -136,7 +149,7 @@
     <br/>
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
-# fact 8: Menopause Subreddit
+# fact 7: Menopause Subreddit
 - copy: |-
     THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE  
     
@@ -148,7 +161,7 @@
   url: https://www.reddit.com/r/menopause/new/.rss?t=hour
 
 
-# fact 9: Kim Kardashian vs Updated DEI Policies for Women
+# fact 8: Kim Kardashian vs Updated DEI Policies for Women
 - copy: |-
     <div class="center">
     What's more interesting according to Google?
@@ -178,7 +191,7 @@
     date: now 1-d
 
 
-# fact 10: Medical Diagnosis
+# fact 9: Medical Diagnosis
 - copy: |-
     WOMEN, AS WELL AS LOW-INCOME PATIENTS, EXPERIENCED LONGER DELAYS IN DIAGNOSIS. THEY WERE MORE LIKELY THAN MEN TO SEE 10 OR MORE MONTHS PASS BETWEEN THEIR FIRST VISIT TO A DOCTOR AND DIAGNOSIS AND TO HAVE MADE MORE THAN FIVE VISITS TO A DOCTOR PRIOR TO DIAGNOSIS.
     <br/>
@@ -207,7 +220,7 @@
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
-# fact 11: Exercise Hours
+# fact 10: Exercise Hours
 - copy: |-
     **⬤ AVAILABLE MALE HOURS TO EXERCISE 24 HOURS**
 
@@ -235,7 +248,7 @@
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
 
-# fact 12: Time at Doctor's
+# fact 11: Time at Doctor's
 - copy: |-
     ➤➤➤ A survey by the University of Chicago found that 64% of women have brought a male partner or family member to a doctor's appointment in order to be taken more seriously.
     <br/>
@@ -251,7 +264,7 @@
 
         `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
-# fact 13: Kim Kardashian vs SB8
+# fact 12: Kim Kardashian vs SB8
 - copy: |-
     <div class="center">
     What's more interesting according to Google?
@@ -281,7 +294,7 @@
     date: now 1-d
 
 
-# fact 14: Reddit-Title-Only
+# fact 13: Reddit-Title-Only
 - copy: |-
     <div class="center">
      🔎 🔎 🔎 🔎 A QUICK SEARCH ON REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍

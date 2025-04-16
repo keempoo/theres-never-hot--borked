@@ -82,13 +82,13 @@
 # fact 3: Two X Chromosomes
 - copy: |-
     THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE  
-    
+  
       
 
 
     {{{DATA}}}
   id: reddit
-  url: https://www.reddit.com/r/TwoXChromosomes/top/.rss?t=day
+  url: https://www.reddit.com/r/Menopause/top/.rss?t=day
 
 # fact 4: Householders
 - copy: |-

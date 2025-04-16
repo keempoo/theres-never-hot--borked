@@ -81,7 +81,9 @@
 
 # fact 3: Top r/Menopause
 - copy: |-
-    <div class="center">THE TOP 3 POSTS ON THE MENOPAUSE SUBREDDIT IN THE LAST DAY ARE</div>        
+    THE TOP 3 POSTS ON THE MENOPAUSE SUBREDDIT IN THE LAST DAY ARE  
+  
+      
 
 
     {{{DATA}}}
@@ -151,7 +153,7 @@
 
 # fact 7: Menopause Subreddit
 - copy: |-
-    THE TOP 3 POSTS ON TWOXCHROMOSOMES SUBREDDIT IN THE LAST DAY ARE  
+    THE TOP 3 POSTS ON MENOPAUSE SUBREDDIT IN THE LAST DAY ARE  
     
       
 

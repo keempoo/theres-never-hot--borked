@@ -88,8 +88,7 @@
 
     {{{DATA}}}
   id: reddit
-  url: https://www.reddit.com/search/.rss?q=menopause&type=posts&t=day&cId=ae5241a7-31b8-4276-9d03-c5e4f30331f2&iId=10e64f78-2533-445f-98d6-ee7d3b9cf196
-
+  url: https://www.reddit.com/r/TwoXChromosomes/top/.rss?t=day
 
 # fact 4: Householders
 - copy: |-

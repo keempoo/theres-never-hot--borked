@@ -76,7 +76,7 @@
 
   id: trends
   query:
-    q: MENNOPAUSE, ERECTILE DYSFUNCTION
+    q: MENOPAUSE, ERECTILE DYSFUNCTION
     date: now 1-d
 
 

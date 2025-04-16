@@ -79,7 +79,7 @@
     date: now 1-d
 
 
-# fact 3: Two X Chromosomes
+# fact 3: Top r/Menopause
 - copy: |-
     THE TOP 3 POSTS ON THE MENOPAUSE SUBREDDIT IN THE LAST DAY ARE  
   
@@ -298,8 +298,8 @@
 
 # fact 13: Medical Malpractice & Menopause
 - copy: |-
-    <div class="center">🔎 🔎 🔎 🔎 A QUICK SEARCH ON THE MEDICAL MALPRACTICE REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍
-    **“MENOPAUSE”**</div>
+    🔎 🔎 🔎 🔎 A QUICK SEARCH ON THE MEDICAL MALPRACTICE REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍
+    **“MENOPAUSE”**
     
     {{{DATA}}}
   id: reddit

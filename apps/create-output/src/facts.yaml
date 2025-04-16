@@ -51,11 +51,10 @@
         
 # fact 2: Trends
 - copy: |-
-    <div class="center">What's more interesting according to Google?</div>
+    <div class="center">What's trending on Google?</div>
 
-    <br/>
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
-    <br/>    
+
     <div class="center">
     “MENOPAUSE" ⮜⮜ VS.⮞⮞⮞  “ERECTILE DYSFUNCTION"
     </div>
@@ -70,7 +69,7 @@
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
     
-    <STRONG>AND YET ACCORDING TO CHATGPT THERE ARE 22 DISTINCT SOLUTION FOR E.D. AND ONLY 6 FOR MENOPAUSE.</STRONG> 
+    <STRONG>AND YET ACCORDING TO CHATGPT THERE ARE 22 DISTINCT SOLUTIONS FOR ERECTILE DYSFUNCTION AND ONLY 6 FOR MENOPAUSE.</STRONG> 
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 

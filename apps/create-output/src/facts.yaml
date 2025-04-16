@@ -305,4 +305,4 @@
      
      {{{DATA}}}
   id: reddit-title-only
-  url: https://www.reddit.com/r/MedicalMalpractice/search/.rss?q=menopause&type=posts&sort=relevance
+  url: https://www.reddit.com/search.xml?q=subreddit%3AMedicalMalpractice%20menopause&sort=new

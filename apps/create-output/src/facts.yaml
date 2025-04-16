@@ -195,19 +195,17 @@
 
 # fact 9: Medical Diagnosis
 - copy: |-
-    WOMEN, AS WELL AS LOW-INCOME PATIENTS, EXPERIENCED LONGER DELAYS IN DIAGNOSIS. THEY WERE MORE LIKELY THAN MEN TO SEE 10 OR MORE MONTHS PASS BETWEEN THEIR FIRST VISIT TO A DOCTOR AND DIAGNOSIS AND TO HAVE MADE MORE THAN FIVE VISITS TO A DOCTOR PRIOR TO DIAGNOSIS.
+    WOMEN, AS WELL AS LOW-INCOME PATIENTS, EXPERIENCED LONGER DELAYS IN ANY MEDICAL DIAGNOSIS. WOMEN WERE MORE LIKELY THAN MEN TO SEE 10 OR MORE MONTHS PASS BETWEEN THEIR FIRST VISIT TO A DOCTOR AND DIAGNOSIS AND TO HAVE MADE MORE THAN FIVE VISITS TO A DOCTOR PRIOR TO DIAGNOSIS.
     <br/>
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-    <br/>
-    ⬛ AVERAGE MALE TIME FOR DIAGNOSIS................... 4-5 YEARS
-
+    <br/>    
     ⬜ AVERAGE FEMALE TIME FOR DIAGNOSIS................. 4-7 YEARS**
     <br/>
+    It is estimated that up to 1 in 3 women may face misdiagnoses regarding menopause and its associated symptoms, often requiring between two and five medical appointments before a correct diagnosis is made
 
-    ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀   
+    🐁  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀  ♀   
 
-    Female mice were largely excluded from both animal and human clinical trials because of the menstrual cycle. fluctuating hormone levels make data difficult to interpret, results more variable, and research more expensive. while males have the same sex steroid hormones, female hormone levels rise and fall.
-
+    Despite women constituting 51% of the population, there remains a significant gap in research and data on how medical symptoms impact women differently from men. This disparity may explain why, of the 500 women surveyed, Higgs LLP documented over 90 symptoms inadequately diagnosed by healthcare professionals.
 
     ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ 
 
@@ -300,6 +298,7 @@
 - copy: |-
     <div class="center">🔎 🔎 🔎 🔎A QUICK SEARCH ON THE MEDICAL MALPRACTICE REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍</div>
     <div class="center">**“MENOPAUSE”**</div>
+
     {{{DATA}}}
   id: reddit
   url: https://rss.app/feeds/9Wp1FY8ZEP73nCQm.xml

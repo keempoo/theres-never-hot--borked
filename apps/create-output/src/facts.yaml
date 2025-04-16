@@ -81,9 +81,7 @@
 
 # fact 3: Top r/Menopause
 - copy: |-
-    THE TOP 3 POSTS ON THE MENOPAUSE SUBREDDIT IN THE LAST DAY ARE  
-  
-      
+    <div class="center>THE TOP 3 POSTS ON THE MENOPAUSE SUBREDDIT IN THE LAST DAY ARE</div>        
 
 
     {{{DATA}}}

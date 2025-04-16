@@ -296,14 +296,14 @@
     date: now 1-d
 
 
-# fact 13: Reddit-Title-Only
+# fact 13: Medical Malpractice & Menopause
 - copy: |-
     <div class="center">
-     🔎 🔎 🔎 🔎 A QUICK SEARCH ON REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍
+     🔎 🔎 🔎 🔎 A QUICK SEARCH ON THE MEDICAL MALPRACTICE REDDIT FOR THE WORDS 🔍 🔍 🔍 🔍
 
-     **“DOCTOR WON'T APPROVE HYSTERECTOMY”**
+     **“MENOPAUSE”**
      </div>
      
      {{{DATA}}}
   id: reddit-title-only
-  url: https://www.reddit.com/search/.rss?q=doctor+won%27t+approve+hysterectomy+&type=link&cId=a2eb7335-6c14-47ef-8b51-2aeee6b6d815&iId=c8bc429d-bf62-468f-a2f0-9297dd842039
+  url: https://www.reddit.com/r/MedicalMalpractice/search/.rss?q=menopause&cId=172ca187-2dff-4a48-831b-3dc8c5a3a41f&iId=fe4c33f5-a1ff-495f-bbfc-3f6e99026110

@@ -242,7 +242,7 @@
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
 
-# fact 11: Time at Doctor's
+# fact 12: Time at Doctor's
 - copy: |-
     ➤➤➤ A survey by the University of Chicago found that 64% of women have brought a male partner or family member to a doctor's appointment in order to be taken more seriously.
     <br/>
@@ -258,7 +258,7 @@
 
         `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
 
-# fact 12: Kim Kardashian vs SB8
+# fact 11: Kim Kardashian vs SB8
 - copy: |-
     <div class="center">
     What's more interesting according to Google?
@@ -293,7 +293,7 @@
     <div class="center"> HERE ARE SOME POSTS ON R/MEDICAL MALPRACTICE THAT HAVE "MENOPAUSE" IN IT</div>
 
     {{{DATA}}}
-  id: reddit
+  id: reddit-title-only
   url: https://rss.app/feeds/9Wp1FY8ZEP73nCQm.xml
 
   

@@ -195,11 +195,7 @@
 
 # fact 9: Medical Diagnosis
 - copy: |-
-<<<<<<< HEAD
     <strong>⏱ AVERAGE TIME WASTED BEFORE FOR MENOPAUSE DIAGNOSIS....... 2-5 YEARS</strong>
-=======
-    <strong>⏱ AVERAGE FEMALE TIME WASTED BEFORE FOR MENOPAUSE DIAGNOSIS....... 2-5 YEARS</strong>
->>>>>>> 7e5434de4ba16ebfe14403e7aa5b102579dd8b5e
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
             

@@ -292,7 +292,7 @@
 
 # fact 13: Medical Malpractice & Menopause
 - copy: |-
-    <div class="center"> 🔍 🔍 🔍 🔍A QUICK SEARCH ON THE MEDICAL MALPRACTICE REDDIT FOR "MENOPAUSE" 🔍 🔍 🔍 🔍</div>
+    <div class="center"> A QUICK SEARCH ON THE MEDICAL MALPRACTICE REDDIT FOR POSTS INCLUDING "MENOPAUSE"</div>
 
     {{{DATA}}}
   id: reddit

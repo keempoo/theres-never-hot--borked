@@ -154,9 +154,6 @@
 # fact 7: Menopause Subreddit
 - copy: |-
     THE TOP 3 POSTS ON MENOPAUSE SUBREDDIT IN THE LAST DAY ARE  
-    
-      
-
 
     {{{DATA}}}
   id: reddit

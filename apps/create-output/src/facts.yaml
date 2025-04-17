@@ -196,7 +196,7 @@
 # fact 9: Medical Diagnosis
 - copy: |-
     <div class="center"><strong>⏱ AVERAGE TIME WASTED BEFORE DIAGNOSIS ⏱ 
-    2-5 YEARS</strong></center>
+    2-5 YEARS ⏱</strong></div>
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
             

@@ -160,19 +160,19 @@
   url: https://www.reddit.com/r/menopause/new/.rss?t=hour
 
 
-# fact 8: Kim Kardashian vs Updated DEI Policies for Women
+# fact 8: Related Searches
 - copy: |-
     <div class="center">
-    What's more interesting according to Google?
+    WHATCHA LOOKIN' AT???
     
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
     
-    “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Updated DEI Policies for Women”
+    People who looked up the keyword, {{q}}} also looked up
     </div>
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
     
-    {{{CHART}}}
+    {{{QUERIES}}}
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
     
@@ -184,9 +184,9 @@
 
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-  id: trends
+  id: related_queries
   query:
-    q: KIM KARDASHIAN, TRUMP DEI WOMEN
+    q: PERIMENOPAUSE
     date: now 1-d
 
 

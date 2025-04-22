@@ -1,17 +1,92 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { parse } from 'yaml';
+import Mustache from 'mustache';
+import _ from 'lodash';
+import cheerio from 'cheerio';
+import { marked } from 'marked';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const FACTS_FILE = path.join(__dirname, 'facts.yaml');
+import { fetchRedditRSS } from './fetchRedditRSS.mjs';
+import { serpTrendQuery } from './serpAPI.mjs';
 
-// read facts from file, take fist one out, put it at the end, and save the all back to the file
-export function getFunFact(nextFactIndex) {
-  const facts = parse(fs.readFileSync(FACTS_FILE, 'utf8'));
-  // the fact index is increased infinitely so this limits it to the length of the facts array
-  const index = nextFactIndex % facts.length;
-  const funFact = facts[index];
-  return funFact;
+marked.use({
+  breaks: true,
+});
+
+export async function factConstructor(fact) {
+  const copy = fact.copy.replaceAll('\n  ', '\n');
+
+  switch (fact.id) {
+    case 'reddit': {
+      const postTemplate = `<strong>“{{title}}”</strong><br/><em>Last Updated {{time}}</em><br/>{{{content}}}<br/>`;
+      const response = await fetchRedditRSS(fact.url, postTemplate);
+      const template = marked.parse(copy);
+      return Mustache.render(template, { DATA: response });
+    }
+
+    case 'reddit-title-only': {
+      const postTemplate = `<div class="center"><strong>{{subreddit}}</strong> • {{time}}<br/><h3>{{title}}</h3><br/></div>`;
+      const response = await fetchRedditRSS(fact.url, postTemplate);
+      const template = marked.parse(copy);
+      return Mustache.render(template, { DATA: response });
+    }
+
+    case 'trends': {
+      const queryParams = {
+        geo: 'US',
+        google_domain: 'google.com',
+        engine: 'google_trends',
+        data_type: 'TIMESERIES',
+        date: 'now 1-d',
+        ...fact.query,
+      };
+      const response = await serpTrendQuery({ queryParams });
+
+      const data = _.chain(response.interest_over_time.averages)
+        .keyBy('query')
+        .mapValues('value')
+        .value();
+
+      const chartResponse = await fetch(response.search_metadata.prettify_html_file);
+      const body = await chartResponse.text();
+      const $ = cheerio.load(body);
+      const svgWidth = $('line-chart-directive svg').attr('width');
+      const svgHeight = $('line-chart-directive svg').attr('height');
+      $('line-chart-directive svg')
+        .attr('viewbox', `0 0 ${svgWidth} ${svgHeight}`)
+        .attr('width', '100%');
+
+      const chart = cheerio.html($('line-chart-directive')).replaceAll('\n', '');
+
+      return marked.parse(Mustache.render(copy, {
+        ...data,
+        CHART: chart,
+      }));
+    }
+
+    case 'related_queries': {
+      const queryParams = {
+        geo: 'US',
+        google_domain: 'google.com',
+        engine: 'google_trends',
+        data_type: 'RELATED_QUERIES',
+        date: 'now 1-d',
+        ...fact.query,
+      };
+
+      const response = await serpTrendQuery({ queryParams });
+      const related = _.get(response, 'related_queries.default', []);
+
+      const queriesList = related
+        .map(query => `- ${query.query} (${query.formatted_value})`)
+        .join('\n');
+
+      // This is the important fix: use Mustache to pass QUERIES into your template
+      return marked.parse(Mustache.render(copy, {
+        ...fact.query,
+        QUERIES: queriesList,
+      }));
+    }
+
+    default: {
+      return marked.parse(copy);
+    }
+  }
 }

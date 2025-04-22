@@ -60,28 +60,6 @@ export async function factConstructor(fact) {
       return marked.parse(Mustache.render(copy, { ...data, CHART: chart }));
     }
 
-    case 'related_queries': {
-      const queryParams = {
-        geo: 'US',
-        google_domain: 'google.com',
-        engine: 'google_trends',
-        data_type: 'RELATED_QUERIES',
-        date: 'now 1-d',
-        ...fact.query,
-      };
-
-      const response = await serpTrendQuery({ queryParams });
-      const related = _.get(response, 'related_queries.default', []);
-
-      const queriesList = related
-        .map(query => `- ${query.query} (${query.formatted_value})`)
-        .join('\n');
-
-      // This is the important fix: use Mustache to pass QUERIES into your template
-      const rendered = Mustache.render(copy, { ...fact.query, QUERIES: queriesList });
-      return marked.parse(rendered);
-    }  
-
     default:
       return marked.parse(copy);
   }

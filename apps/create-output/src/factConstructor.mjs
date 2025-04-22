@@ -78,8 +78,9 @@ export async function factConstructor(fact) {
         .join('\n');
 
       // This is the important fix: use Mustache to pass QUERIES into your template
-      return marked.parse(Mustache.render(copy, { ...fact.query, QUERIES: queriesList }));
-    }
+      const rendered = Mustache.render(copy, { ...fact.query, QUERIES: queriesList });
+      return marked.parse(rendered);
+    }  
 
     default:
       return marked.parse(copy);

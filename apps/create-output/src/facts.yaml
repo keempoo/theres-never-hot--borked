@@ -44,6 +44,11 @@
     **DIABOLICAL**
     ☢ ELECTRICAL SHOCKS ☢ MISSING OR REDUCTION IN CLITORIS ☢ LOWER JAW GROWTH ☢ VERTIGO
 
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+
+    **USER SUBMITTED**
+    ☎ INSOMNIA & PANIC ATTACKSSSSSSSSSS, B ☎
+
 
     Got a good one for this list? Add it! 
   image: https://www.muthagoose.art/hot/qr-code.png
@@ -90,6 +95,7 @@
   id: reddit
   url: https://www.reddit.com/r/Menopause/top/.rss?t=day
 
+
 # fact 4: Householders
 - copy: |-
     **THE CURRENT NUMBER OF HOUSEHOLDS TAKING CARE OF ONE OR MORE RELATIVES BY GENDER:**  
@@ -100,16 +106,18 @@
     <br/>
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
     <br/>    
-    A “householder” is a person whose name the housing unit is rented or owned and is at least 15 years old.
+    More than double the amount of women are taking care of themselves plus one other person.
 
-    Family household is a household in which there is at least 1 person present who is related to the householder by birth, marriage or adoption. Family is used to refer to a family household. In general, family consists of those related to each other by birth, marriage or adoption.  
+    In a January 2025 study by the Mayo Clinic, researchers found that women 45-60 years old who are managing family caregiving and menopause face nearly double the risk of moderate to severe menopause symptoms.
+
+    Dr. Ekta Kapoor, a co-investigator of the study, says women providing 15 or more hours of care per week are especially affected, with half of them experiencing moderate or worse symptoms.
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
     <br/>
     ![householder gender breakdown](https://fred.stlouisfed.org/graph/fredgraph.png?g=1ebuZ)
 
 
-# fact 5: Who You Gonna Call
+# fact 5: It's Never too Early for Perimenopause
 - copy: |-
     **SCHOOLS CALL MOTHERS 1.4 TIMES MORE THAN FATHERS WHEN THERE IS AN ISSUE WITH THEIR STUDENT.**  
     
@@ -163,30 +171,25 @@
 # fact 8: Kim Kardashian vs Updated DEI Policies for Women
 - copy: |-
     <div class="center">
-    What's more interesting according to Google?
+    WUTCHOO LOOKIN'AT????
     
     =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
     
-    “KIM KARDASHIAN”  ⮜⮜⮜ VS.⮞⮞⮞  “Updated DEI Policies for Women”
+    People googling PERIMENOPAUSE are also searching these terms. 
     </div>
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
     
-    {{{CHART}}}
+    {{{QUERIES}}}
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
     
-    Results today:
-    - Kim Kardashian: {{KIM KARDASHIAN}}
-    - Trump DEI Women: {{TRUMP DEI WOMEN}}
-
-    Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.
 
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-  id: trends
+  id: related_queries
   query:
-    q: KIM KARDASHIAN, TRUMP DEI WOMEN
+    q: Perimenopause
     date: now 1-d
 
 
@@ -205,8 +208,11 @@
 
     ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  ᐃ  
 
-    1 in 4 women reported being wrongfully prescribed pain medication in an attempt to manage their symptoms without addressing the underlying cause. Following closely behind, 1 in 5 women found themselves prescribed antidepressants or SSRIs as doctors overlooked the root cause of their condition. 
+    Recent studies have shown that only 6.8% of medical residents said they were prepared to manage menopausal symptoms, while 20.3% did not receive any training on menopause during residency,” she said.
 
+    ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ ᐁ 
+
+    1 in 4 women reported being wrongfully prescribed pain medication in an attempt to manage their symptoms without addressing the underlying cause. Following closely behind, 1 in 5 women found themselves prescribed antidepressants or SSRIs as doctors overlooked the root cause of their condition. 
 
     ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎   ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎  ✎
 

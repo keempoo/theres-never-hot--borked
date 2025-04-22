@@ -60,7 +60,34 @@ export async function factConstructor(fact) {
       return marked.parse(Mustache.render(copy, { ...data, CHART: chart }));
     }
 
-    default:
-      return marked.parse(copy);
+   
+    case 'related_queries': {
+  const queryParams = {
+    geo: 'US',
+    google_domain: 'google.com',
+    engine: 'google_trends',
+    data_type: 'RELATED_QUERIES',
+    date: 'now 1-d',
+    ...fact.query,
+  };
+
+  // Fetch data from SerpAPI
+  const response = await serpTrendQuery({ queryParams });
+
+  // Extract related queries
+  const related = _.get(response, 'related_queries.default', []);
+
+  // Format them into markdown
+  const queriesList = related
+    .map(query => `- ${query.query} (${query.formatted_value})`)
+    .join('\n');
+
+  return marked.parse(`### Related Queries\n\n${queriesList}`);
+}
+
+default:
+  return marked.parse(copy);
+
+  
   }
 }

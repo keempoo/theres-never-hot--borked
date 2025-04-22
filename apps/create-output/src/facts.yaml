@@ -168,7 +168,7 @@
   url: https://www.reddit.com/r/menopause/new/.rss?t=hour
 
 
-# fact 8: Related Search Terms
+# fact 8: Kim Kardashian vs Updated DEI Policies for Women
 - copy: |-
     <div class="center">
     WUTCHOO LOOKIN'AT????
@@ -183,11 +183,14 @@
     {{{QUERIES}}}
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
+    
 
+
+    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
   id: related_queries
-query:
-  q: Perimenopause
-
+  query:
+    q: Perimenopause
+    date: now 1-d
 
 
 # fact 9: Medical Diagnosis

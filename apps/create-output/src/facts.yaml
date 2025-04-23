@@ -69,8 +69,8 @@
     {{{CHART}}}
 
     Results today:
-    - TOP Menopause
-    - BOTTOM Erectile Dysfunction
+    ▲ TOP Menopause {{{MENOPAUSE}}}
+    ▼ BOTTOM Erectile Dysfunction {{{ERECTILE DYSFUNCTION}}}
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
     
@@ -119,7 +119,7 @@
 
 # fact 5: It's Never too Early for Perimenopause
 - copy: |-
-    **SCHOOLS CALL MOTHERS 1.4 TIMES MORE THAN FATHERS WHEN THERE IS AN ISSUE WITH THEIR STUDENT.**  
+    <div class="center"><strong>AARP AIN'T GOT NOTHING ON ME</strong></div>
     
     ⬛ **59% CALLS TO MOTHER**  
     

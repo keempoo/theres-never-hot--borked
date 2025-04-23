@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/jdwillemse/theres-never-time#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
+    "cheerio": "^1.0.0",
     "colors": "^1.4.0",
     "dotenv": "^16.4.5",
     "javascript-time-ago": "^2.5.9",

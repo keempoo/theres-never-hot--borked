@@ -1,6 +1,6 @@
 import Mustache from 'mustache';
 import _ from 'lodash';
-import cheerio from 'cheerio';
+import * as cheerio from 'cheerio';
 import { marked } from 'marked';
 
 import { fetchRedditRSS } from './fetchRedditRSS.mjs';

@@ -4,7 +4,20 @@
 
 ### Structure
 
+#### In the cloud
+
+Generating printer output avoids local Node.js and software installations on limited or unstable hardware by using GitHub in the cloud. GitHub Workflows process the `facts.yaml` to create the output and post it to a dedicated Gist. To manage the selection of facts across stateless workflow runs, a separate Gist stores an incrementing counter that loops through the available facts.
+
+#### On the printer device
+
+A local bash script retrieves the fact Gist and converts the HTML content into a PDF. This PDF is then sent to the printer. To automate this process, cron is used to schedule regular execution.
+
 ### Requirements
+
+Create a Gist file that will serve as the output for the html and one that will save the fact iteration. Here are two examples. The HTML output can have anything as starting text. The fact counter should start with `0` as content. Here are two examples:
+
+- https://gist.github.com/jdwillemse/8d3e2bbe443b3312e257d8a856caa29d
+- https://gist.github.com/jdwillemse/d401c5675c76d26e60dfb4ea0b985137
 
 #### Environment variables
 

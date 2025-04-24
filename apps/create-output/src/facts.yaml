@@ -201,14 +201,14 @@
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
     {{{CHART}}}    
-    Trends: DIVORCE LAWYER {{DIVORCE LAWYER}}, MENOPAUSE {{MENOPAUSE}}
+    Trends: ▲ DIVORCE LAWYER {{DIVORCE LAWYER}}, ▼ MENOPAUSE {{MENOPAUSE}}
   id: trends
   query:
     q: DIVORCE LAWYER, MENOPAUSE
     date: now 1-d
 
 
-# fact 12: Time at Doctor's
+# fact 10: Time at Doctor's
 - copy: |-
     ➤➤➤ A survey by the University of Chicago found that 64% of women have brought a male partner or family member to a doctor's appointment in order to be taken more seriously.
     <br/>

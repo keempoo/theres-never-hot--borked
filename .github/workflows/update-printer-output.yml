@@ -46,7 +46,7 @@ jobs:
           git config user.name "${{ github.actor }}"
           git add .
           git commit -m "Increment index"
-          git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ vars.FACT_INDEX_GIST_ID }}.git
+          git push https://${{ github.repository_owner }}:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ vars.FACT_INDEX_GIST_ID }}.git
 
       - name: show content
         run: echo "Hello ${{ steps.fact-index.outputs.INDEX }}"
@@ -78,4 +78,4 @@ jobs:
           git config user.name "${{ github.actor }}"
           git add .
           git commit -m "Update ${{ vars.PRINT_DATA_GIST_NAME }}"
-          git push https://jdwillemse:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ vars.PRINT_DATA_GIST_ID }}.git
+          git push https://${{ github.repository_owner }}:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ vars.PRINT_DATA_GIST_ID }}.git

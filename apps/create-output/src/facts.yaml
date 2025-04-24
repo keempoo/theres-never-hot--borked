@@ -250,11 +250,11 @@
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
   id: trends
   query:
-    q: KIM KARDASHIAN, MENOPAUSE
+    q: KIM KARDASHIAN, MENOPAUS2
     date: now 1-d
 
 
-# fact 13: Medical Malpractice & Menopause
+# fact 12: Medical Malpractice & Menopause
 - copy: |-
     <div class="center"> HERE ARE SOME POSTS ON R/MEDICAL MALPRACTICE THAT HAVE "MENOPAUSE"</div>
 

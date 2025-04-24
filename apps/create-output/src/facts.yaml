@@ -189,7 +189,7 @@
 
 # fact 9: Divorce
 - copy: |-
-    <div ="center"><strong>BYE! BYE! BYE!</strong></div>
+    <div class="center"><strong>BYE! BYE! BYE!</strong></div>
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +` 
     
@@ -201,7 +201,7 @@
     
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
     {{{CHART}}}    
-    Trends: ▲ DIVORCE LAWYER {{DIVORCE LAWYER}}, ▼ MENOPAUSE {{MENOPAUSE}}
+    Trends: ▲ MENOPAUSE {{MENOPAUSE}}, ▼ DIVORCE LAWYER {{DIVORCE LAWYER}} 
   id: trends
   query:
     q: DIVORCE LAWYER, MENOPAUSE

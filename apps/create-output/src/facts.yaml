@@ -147,13 +147,13 @@
 
     `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`  
     
-    AND THAT SEGMENT IS GROWING. THE LABOR FORCE PARTICIPATION RATE FOR WOMEN AGED 45–54 WAS APPROXIMATELY 76% IN 2020, WHILE FOR WOMEN AGED 55–64, IT WAS AROUND 60%. 
+    AND THAT SEGMENT IS GROWING. THE LABOR FORCE PARTICIPATION RATE FOR WOMEN AGED 45-54 WAS APPROXIMATELY 76% IN 2020, WHILE FOR WOMEN AGED 55–64, IT WAS AROUND 60%. 
   image: https://www.muthagoose.art/hot/graph_line_lfp-women-by-age.jpeg
 
 
 # fact 7: Menopause Subreddit
 - copy: |-
-    <div ="center">A SEARCH FOR MENOPAUSE ON REDDIT GIVES THE FOLLOWING POSTS</div>  
+    <div class="center">A SEARCH FOR MENOPAUSE ON REDDIT GIVES THE FOLLOWING POSTS</div>  
 
     {{{DATA}}}
   id: reddit

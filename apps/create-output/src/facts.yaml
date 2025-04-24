@@ -153,11 +153,11 @@
 
 # fact 7: Menopause Subreddit
 - copy: |-
-    THE TOP 3 POSTS ON MENOPAUSE SUBREDDIT IN THE LAST DAY ARE  
+    <div ="center">A SEARCH FOR MENOPAUSE ON REDDIT GIVES THE FOLLOWING POSTS</div>  
 
     {{{DATA}}}
   id: reddit
-  url: https://www.reddit.com/r/menopause/new/.rss?t=hour
+  url: https://rss.app/feeds/wLrqHeSff7lU7894.xml
 
 
 # fact 8: Related Searches
@@ -279,6 +279,6 @@
 
     {{{DATA}}}
   id: reddit
-  url: https://rss.app/feeds/9Wp1FY8ZEP73nCQm.xml
+  url: https://rss.app/feeds/i0nkAsrDrcc1HW7V.xml
 
   

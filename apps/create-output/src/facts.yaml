@@ -160,26 +160,7 @@
   url: https://rss.app/feeds/wLrqHeSff7lU7894.xml
 
 
-# fact 8: Related Searches
-- copy: |-
-    WHATCHA LOOKIN AT???
-    
-    =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =    
-    
-    People who looked up the keyword, {{{q}}} also looked up
-    
-    
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-    
-
-    `+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +`
-  id: related_queries
-  query:
-    q: PERIMENOPAUSE
-    date: now 1-d
-
-
-# fact 9: Medical Diagnosis
+# fact 8: Medical Diagnosis
 - copy: |-
     <div class="center"><strong>⏱ AVERAGE TIME WASTED BEFORE DIAGNOSIS ⏱ 
     2-5 YEARS ⏱</strong></div>

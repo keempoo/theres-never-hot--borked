@@ -4,7 +4,7 @@ import en from 'javascript-time-ago/locale/en';
 import Mustache from 'mustache';
 
 let parser = new Parser();
-const wordLimit = 105;
+const wordLimit = 99;
 
 TimeAgo.addDefaultLocale(en);
 // Create formatter (English).
